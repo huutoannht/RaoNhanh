@@ -57,7 +57,7 @@ namespace AspNetCore
             WriteLiteral("\r\n\r\n<div class=\"row heading-bg\">\r\n    <div class=\"col-lg-3 col-md-4 col-sm-4 col-xs-12\">\r\n        ");
             EndContext();
             BeginContext(251, 97, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d221dbd0fb54445cbcd1cf54aa09a7cc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da007962eba84eed8d64765f7f087587", async() => {
                 BeginContext(309, 35, true);
                 WriteLiteral("<i class=\"fa fa-plus\"></i> Thêm mới");
                 EndContext();
@@ -212,7 +212,7 @@ WriteAttributeValue("", 1298, item.PictureSmall, 1298, 18, false);
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(2099, 108, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5a42195a689455081be0c122c93f6fd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a538fa3e1c3484981ef73ba1230216c", async() => {
                 BeginContext(2174, 29, true);
                 WriteLiteral("<i class=\"fa  fa-pencil\"></i>");
                 EndContext();
@@ -300,7 +300,7 @@ WriteAttributeValue("", 2528, item.ProductId, 2528, 15, false);
             WriteLiteral("                ");
             EndContext();
             BeginContext(2673, 117, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "00838173a0344a6e9f33be8864a3b679", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e3a8efc6d5a4e7e800a2fe2a88842c8", async() => {
                 BeginContext(2751, 35, true);
                 WriteLiteral("| <i class=\"fa fa-file-text-o\"></i>");
                 EndContext();

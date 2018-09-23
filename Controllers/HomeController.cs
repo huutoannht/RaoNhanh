@@ -31,8 +31,7 @@ namespace NetCore.Controllers
         public ActionResult Index()
         {
             _log.LogError("Hello, world!");
-           var urlSite = "~/Views/" + ViewBag.SiteId + "/Home";
-            return View(urlSite + "/Index.cshtml");
+            return View();
         }
        
         #region Category
@@ -55,13 +54,11 @@ namespace NetCore.Controllers
         /// <returns></returns>
         public ActionResult Categories()
         {
-            string siteId = ViewBag.SiteId;
             var products = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted ).OrderByDescending(m => m.UpdatedOnUtc);
             return View( products);
         }
         public async Task<ActionResult> GetListCateProduct()
         {
-            string siteId = ViewBag.SiteId;
             var categories = _context.Category.Where(p => !p.IsDeleted  && p.Product.Any()).OrderByDescending(m => m.DisplayOrder);
             if (categories == null)
             {
@@ -73,7 +70,6 @@ namespace NetCore.Controllers
         #region Image
         public async Task<ActionResult> Slide()
         {
-            string siteId = ViewBag.SiteId;
             var slides = _context.Picture.Where(m => !m.IsDeleted  && m.TypePicture == Constants.TYPE_PICTURE.Slide);
             foreach (var item in slides)
             {
@@ -84,9 +80,8 @@ namespace NetCore.Controllers
         }
         public async Task<ActionResult> GetAlbumProduct()
         {
-            string siteId = ViewBag.SiteId;
             var slides = await (from product in _context.Product
-                         where !product.IsDeleted && product.SiteId == siteId
+                         where !product.IsDeleted 
                          select new ProductDTO()
                          {
                              ProductAlias = product.ProductAlias,
@@ -96,7 +91,6 @@ namespace NetCore.Controllers
         }
         public async Task<ActionResult> IconSlide()
         {
-            string siteId = ViewBag.SiteId;
             var categories = _context.Category.Where(m => !m.IsDeleted );
             return PartialView( await categories.ToListAsync());
         }
@@ -104,7 +98,6 @@ namespace NetCore.Controllers
         #region Product
         public ActionResult Details(string id)
         {
-            string siteId = ViewBag.SiteId;
 
             var product = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted && p.ProductAlias == id );
             if (product == null)
@@ -115,10 +108,8 @@ namespace NetCore.Controllers
         }
         public async Task<ActionResult> Product()
         {
-            string siteId = ViewBag.SiteId;
-
             var products = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted ).OrderByDescending(m => m.UpdatedOnUtc);
-            if (siteId == null)
+            if (products == null)
             {
                 return NotFound();
             }
@@ -126,10 +117,9 @@ namespace NetCore.Controllers
         }
         public async Task<ActionResult> GetListProduct(int id)
         {
-            string siteId = ViewBag.SiteId;
             if (id == 0)
             {
-                id = _context.Category.Where(p => p.SiteId == siteId).OrderBy(m => m.DisplayOrder).FirstOrDefault().CategoryId;
+                id = _context.Category.OrderBy(m => m.DisplayOrder).FirstOrDefault().CategoryId;
             }
             var products = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted && p.CategoryId == id ).OrderByDescending(m => m.UpdatedOnUtc);
             if (products == null)
@@ -140,10 +130,9 @@ namespace NetCore.Controllers
         }
         public async Task<ActionResult> GetListSameProduct(int id)
         {
-            string siteId = ViewBag.SiteId;
             if (id == 0)
             {
-                id = _context.Category.Where(p => p.SiteId == siteId).OrderBy(m => m.DisplayOrder).FirstOrDefault().CategoryId;
+                id = _context.Category.OrderBy(m => m.DisplayOrder).FirstOrDefault().CategoryId;
             }
             var products = await _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted && p.CategoryId == id ).OrderByDescending(m => m.UpdatedOnUtc).ToListAsync();
             if (products == null)
@@ -156,13 +145,11 @@ namespace NetCore.Controllers
         #region Contact
         public async Task<ActionResult> DetailContact()
         {
-            string siteId = ViewBag.SiteId;
             var contact = await _context.Contact.FirstOrDefaultAsync();
             return PartialView(contact);
         }
         public async Task<ActionResult> JsonContact()
         {
-            string siteId = ViewBag.SiteId;
             var contact = await _context.Contact.FirstOrDefaultAsync();
             return Json(contact);
         }
@@ -176,7 +163,6 @@ namespace NetCore.Controllers
             if (ModelState.IsValid)
             {
                 _context.Communicate.Add(communicate);
-                communicate.SiteId = ViewBag.SiteId;
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
@@ -187,14 +173,12 @@ namespace NetCore.Controllers
         #region Menu
         public async Task<ActionResult> GetMenu()
         {
-            string siteId = ViewBag.SiteId;
             var categories = _context.Category.Where(m => !m.IsDeleted  && m.Product.Any());
 
             return PartialView( await categories.ToListAsync());
         }
         public async Task<ActionResult> GetMenuStudio(int? id)
         {
-            string siteId = ViewBag.SiteId;
             var products = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted );
 
             if (id!=null)
@@ -208,7 +192,6 @@ namespace NetCore.Controllers
 
         public async Task<ActionResult> Filter()
         {
-            string siteId = ViewBag.SiteId;
             var categories = _context.Category.Where(m => !m.IsDeleted  && m.Product.Any());
             return PartialView(await categories.ToListAsync());
         }
@@ -216,7 +199,6 @@ namespace NetCore.Controllers
     
         public async Task<ActionResult> GetStretcher()
         {
-            string siteId = ViewBag.SiteId;
             var categories = _context.Category.Where(p => !p.IsDeleted ).OrderByDescending(m => m.DisplayOrder);
             if (categories == null)
             {
