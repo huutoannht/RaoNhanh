@@ -110,6 +110,7 @@ namespace NetCore
                     template: "Product/{id?}",
                     defaults: new { controller = "Product", action = "GetById" });
             });
+//Toan NH
         }
     }
 }
