@@ -32,7 +32,7 @@ namespace NetCore.Areas.Admin.Controllers
         public async Task<ActionResult> Index()
         {
             string siteId = ViewBag.SiteId;
-            var products = _context.Product.Include(p => p.Category).Where(p => !p.Deleted && p.SiteId == siteId).OrderByDescending(m => m.UpdatedOnUtc);
+            var products = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted && p.SiteId == siteId).OrderByDescending(m => m.UpdatedOnUtc);
             return View(await products.ToListAsync());
         }
 
@@ -144,7 +144,7 @@ namespace NetCore.Areas.Admin.Controllers
         public async Task<ActionResult> Delete(int? id)
         {
             Product product = await _context.Product.FindAsync(id);
-            product.Deleted = true;
+            product.IsDeleted = true;
             TempData["Message"] = "delete";
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
@@ -152,7 +152,7 @@ namespace NetCore.Areas.Admin.Controllers
         public async Task<ActionResult> Publish(int? id)
         {
             Product product = await _context.Product.FindAsync(id);
-            product.Published = true;
+            product.IsPublished = true;
             TempData["Message"] = "update";
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");

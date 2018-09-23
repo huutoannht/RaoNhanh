@@ -42,7 +42,7 @@ namespace NetCore.Controllers
           
             string siteId = ViewBag.SiteId;
 
-            var product = _context.Product.Include(p => p.Category).Where(p => !p.Deleted && p.CategoryId == id && p.SiteId == siteId);
+            var product = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted && p.CategoryId == id && p.SiteId == siteId);
             if (product == null)
             {
                 return NotFound();
@@ -57,7 +57,7 @@ namespace NetCore.Controllers
         public ActionResult Categories()
         {
             string siteId = ViewBag.SiteId;
-            var products = _context.Product.Include(p => p.Category).Where(p => !p.Deleted && p.SiteId == siteId).OrderByDescending(m => m.UpdatedOnUtc);
+            var products = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted && p.SiteId == siteId).OrderByDescending(m => m.UpdatedOnUtc);
             urlSite = "~/Views/" + ViewBag.SiteId + "/Home";
             return View(urlSite + "/Category.cshtml", products);
         }
@@ -92,7 +92,7 @@ namespace NetCore.Controllers
             urlSite = "~/Views/" + ViewBag.SiteId + "/Home";
             string siteId = ViewBag.SiteId;
             var slides = await (from product in _context.Product
-                         where !product.Deleted && product.SiteId == siteId
+                         where !product.IsDeleted && product.SiteId == siteId
                          select new ProductDTO()
                          {
                              ProductAlias = product.ProductAlias,
@@ -113,7 +113,7 @@ namespace NetCore.Controllers
         {
             string siteId = ViewBag.SiteId;
 
-            var product = _context.Product.Include(p => p.Category).Where(p => !p.Deleted && p.ProductAlias == id && p.SiteId == siteId);
+            var product = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted && p.ProductAlias == id && p.SiteId == siteId);
             if (product == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace NetCore.Controllers
         {
             string siteId = ViewBag.SiteId;
 
-            var products = _context.Product.Include(p => p.Category).Where(p => !p.Deleted && p.SiteId == siteId).OrderByDescending(m => m.UpdatedOnUtc);
+            var products = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted && p.SiteId == siteId).OrderByDescending(m => m.UpdatedOnUtc);
             if (siteId == null)
             {
                 return NotFound();
@@ -138,7 +138,7 @@ namespace NetCore.Controllers
             {
                 id = _context.Category.Where(p => p.SiteId == siteId).OrderBy(m => m.DisplayOrder).FirstOrDefault().CategoryId;
             }
-            var products = _context.Product.Include(p => p.Category).Where(p => !p.Deleted && p.CategoryId == id && p.SiteId == siteId).OrderByDescending(m => m.UpdatedOnUtc);
+            var products = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted && p.CategoryId == id && p.SiteId == siteId).OrderByDescending(m => m.UpdatedOnUtc);
             if (products == null)
             {
                 return NotFound();
@@ -153,7 +153,7 @@ namespace NetCore.Controllers
             {
                 id = _context.Category.Where(p => p.SiteId == siteId).OrderBy(m => m.DisplayOrder).FirstOrDefault().CategoryId;
             }
-            var products = await _context.Product.Include(p => p.Category).Where(p => !p.Deleted && p.CategoryId == id && p.SiteId == siteId).OrderByDescending(m => m.UpdatedOnUtc).ToListAsync();
+            var products = await _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted && p.CategoryId == id && p.SiteId == siteId).OrderByDescending(m => m.UpdatedOnUtc).ToListAsync();
             if (products == null)
             {
                 return NotFound();
@@ -212,7 +212,7 @@ namespace NetCore.Controllers
         {
             urlSite = "~/Views/" + ViewBag.SiteId + "/Home";
             string siteId = ViewBag.SiteId;
-            var products = _context.Product.Include(p => p.Category).Where(p => !p.Deleted && p.SiteId == siteId);
+            var products = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted && p.SiteId == siteId);
 
             if (id!=null)
             {

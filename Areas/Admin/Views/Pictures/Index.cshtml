@@ -62,7 +62,7 @@
                 @Html.DisplayFor(modelItem => item.DisplayOrder)
             </td>
             <td>
-                @item.CreatedOnUtc.Value.ToString("dd/MM/yyyy hh:ss")
+                @item.CreatedOnUtc.ToString("dd/MM/yyyy hh:ss")
             </td>
             <td>
                 <a href="~/Admin/Pictures/EditSlide/@item.PictureId" class="" title="Chỉnh sửa"><i class="fa  fa-pencil"></i></a>

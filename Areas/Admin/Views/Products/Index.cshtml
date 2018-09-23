@@ -61,7 +61,7 @@
                 @Html.DisplayFor(modelItem => item.OldPrice)
             </td>
             <td>
-                @if (!item.Published)
+                @if (!item.IsPublished)
                 {
                     <span class="label label-success">có</span>
                 }
@@ -78,11 +78,11 @@
             </td>
             <td>
                 <a href="~/Admin/Products/Edit/@item.ProductId" class="" title="Chỉnh sửa"><i class="fa  fa-pencil"></i></a>
-                @if (!item.Deleted)
+                @if (!item.IsDeleted)
                 {
                     <a onclick="changeRecord('@item.ProductId','Products')" class=""  title="Xóa">| <i class="fa  fa-trash-o"></i></a>
                 }
-                @if (!item.Published)
+                @if (!item.IsPublished)
                 {
                     <a onclick="changeRecord('@item.ProductId','Products','Publish')" class="" title="Thay đổi trạng thái">| <i class="fa fa-ban"></i></a>
                 }

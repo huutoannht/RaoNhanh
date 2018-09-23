@@ -89,7 +89,7 @@ WriteAttributeValue(" ", 271, ViewBag.IsMenuBlack!=null?"photobooth_black":"", 2
             WriteLiteral(">\r\n        <li class=\"menu-item\"><a href=\"/\">Trang chủ</a></li>\r\n        <li class=\"menu-item\">\r\n            ");
             EndContext();
             BeginContext(432, 41, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "923f4c2fdfcb420da8ec0b9035dc0000", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2af9764ca244751aa674ddc9f02ecee", async() => {
                 BeginContext(460, 9, true);
                 WriteLiteral("Album ảnh");
                 EndContext();
@@ -119,7 +119,7 @@ WriteAttributeValue(" ", 271, ViewBag.IsMenuBlack!=null?"photobooth_black":"", 2
             WriteLiteral("                    <li class=\"menu-item photobooth_sub_menu_active\">");
             EndContext();
             BeginContext(647, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "def54fe474d84790915f43bd633b0045", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5047148d97274d79875432f966686d20", async() => {
                 BeginContext(690, 12, false);
 #line 18 "C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\Views\raonhanh\Home\GetMenu.cshtml"
                                                                                                           Write(product.Name);
@@ -159,7 +159,7 @@ AddHtmlAttributeValue("", 666, product.ProductAlias, 666, 21, false);
             WriteLiteral("            </ul>\r\n        </li>\r\n        <li class=\"menu-item\">");
             EndContext();
             BeginContext(796, 25, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c9513b95bf94ece8d3860c83e3296f8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1e13732d02f43f9be097f4a792f9e47", async() => {
                 BeginContext(814, 3, true);
                 WriteLiteral("Giá");
                 EndContext();
@@ -189,7 +189,7 @@ AddHtmlAttributeValue("", 666, product.ProductAlias, 666, 21, false);
             WriteLiteral("                    <li class=\"menu-item\">");
             EndContext();
             BeginContext(1043, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a97896e8a7440089d740eda889e336b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6285135eb954b808d8754ff71a25742", async() => {
                 BeginContext(1094, 12, false);
 #line 28 "C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\Views\raonhanh\Home\GetMenu.cshtml"
                                                                                        Write(product.Name);
@@ -229,7 +229,7 @@ AddHtmlAttributeValue("", 1070, product.ProductAlias, 1070, 21, false);
             WriteLiteral("            </ul>\r\n        </li>\r\n        <li class=\"menu-item\">");
             EndContext();
             BeginContext(1200, 31, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5f3610d796c4c1ca2f0ba2827cb7c22", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cce12cc60d924c1b943406eda42da8c3", async() => {
                 BeginContext(1220, 7, true);
                 WriteLiteral("Liên hệ");
                 EndContext();
@@ -250,7 +250,7 @@ AddHtmlAttributeValue("", 1070, product.ProductAlias, 1070, 21, false);
             WriteLiteral("</li>\r\n    </ul>\r\n</nav>\r\n");
             EndContext();
             BeginContext(1257, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d4e596875b844df1a1b3ab77b68a04d5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6c2bc6b3e8b485390dfeb2fdadc43ce", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

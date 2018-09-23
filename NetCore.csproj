@@ -16,7 +16,7 @@
     <Compile Remove="Views\Account\**" />
     <Compile Remove="Views\phuoc.com.vn\**" />
     <Compile Remove="Views\satmanhcuong.com\**" />
-    <Compile Remove="Views\yolostudio.tk\Manage\**" />
+    <Compile Remove="Views\yolostudio.tk\**" />
     <Content Remove="Areas\Admin\Data\**" />
     <Content Remove="Areas\Admin\Models\**" />
     <Content Remove="Areas\Admin\Views\Contact\**" />
@@ -26,7 +26,7 @@
     <Content Remove="Views\Account\**" />
     <Content Remove="Views\phuoc.com.vn\**" />
     <Content Remove="Views\satmanhcuong.com\**" />
-    <Content Remove="Views\yolostudio.tk\Manage\**" />
+    <Content Remove="Views\yolostudio.tk\**" />
     <EmbeddedResource Remove="Areas\Admin\Data\**" />
     <EmbeddedResource Remove="Areas\Admin\Models\**" />
     <EmbeddedResource Remove="Areas\Admin\Views\Contact\**" />
@@ -36,7 +36,7 @@
     <EmbeddedResource Remove="Views\Account\**" />
     <EmbeddedResource Remove="Views\phuoc.com.vn\**" />
     <EmbeddedResource Remove="Views\satmanhcuong.com\**" />
-    <EmbeddedResource Remove="Views\yolostudio.tk\Manage\**" />
+    <EmbeddedResource Remove="Views\yolostudio.tk\**" />
     <None Remove="Areas\Admin\Data\**" />
     <None Remove="Areas\Admin\Models\**" />
     <None Remove="Areas\Admin\Views\Contact\**" />
@@ -46,7 +46,7 @@
     <None Remove="Views\Account\**" />
     <None Remove="Views\phuoc.com.vn\**" />
     <None Remove="Views\satmanhcuong.com\**" />
-    <None Remove="Views\yolostudio.tk\Manage\**" />
+    <None Remove="Views\yolostudio.tk\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -129,6 +129,7 @@
 
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="2.6.375" />
+    <PackageReference Include="BundlerMinifier.Core" Version="2.8.391" />
    <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" PrivateAssets="All" />
     <PackageReference Include="Seq.Extensions.Logging" Version="4.0.0" />
@@ -147,26 +148,6 @@
     <None Include="Views\Shared\_LayoutAdmin.cshtml" />
     <None Include="Views\Shared\_LoginPartial.cshtml" />
     <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
-    <None Include="Views\yolostudio.tk\Account\ConfirmEmail.cshtml" />
-    <None Include="Views\yolostudio.tk\Account\ExternalLoginFailure.cshtml" />
-    <None Include="Views\yolostudio.tk\Account\ForgotPasswordConfirmation.cshtml" />
-    <None Include="Views\yolostudio.tk\Account\Login.cshtml" />
-    <None Include="Views\yolostudio.tk\Account\ResetPasswordConfirmation.cshtml" />
-    <None Include="Views\yolostudio.tk\Connect\Index.cshtml" />
-    <None Include="Views\yolostudio.tk\Home\About.cshtml" />
-    <None Include="Views\yolostudio.tk\Home\Category.cshtml" />
-    <None Include="Views\yolostudio.tk\Home\GetMenu.cshtml" />
-    <None Include="Views\yolostudio.tk\Home\Index.cshtml" />
-    <None Include="Views\yolostudio.tk\Home\Slide.cshtml" />
-    <None Include="Views\yolostudio.tk\Price\Index.cshtml" />
-    <None Include="Views\yolostudio.tk\Product\Compare.cshtml" />
-    <None Include="Views\yolostudio.tk\Product\Index.cshtml" />
-    <None Include="Views\yolostudio.tk\Shared\Error.cshtml" />
-    <None Include="Views\yolostudio.tk\Shared\Lockout.cshtml" />
-    <None Include="Views\yolostudio.tk\Shared\_Layout.cshtml" />
-    <None Include="Views\yolostudio.tk\Shared\_LayoutAdmin.cshtml" />
-    <None Include="Views\yolostudio.tk\Shared\_LayoutDetail.cshtml" />
-    <None Include="Views\yolostudio.tk\Shared\_LayoutLogin.cshtml" />
     <None Include="Views\_ViewImports.cshtml" />
     <None Include="Views\_ViewStart.cshtml" />
     <None Include="wwwroot\Content\dist\vendors\bower_components\bootstrap-daterangepicker\daterangepicker.js" />
