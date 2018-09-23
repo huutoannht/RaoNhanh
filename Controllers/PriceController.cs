@@ -21,7 +21,7 @@ namespace NetCore.Controllers
         {
             urlSite = "~/Views/" + ViewBag.SiteId + "/Price";
             string siteId = ViewBag.SiteId;
-            Contact contact = await _context.Contact.Where(m => m.SiteId == siteId).FirstOrDefaultAsync();
+            Contact contact = await _context.Contact.FirstOrDefaultAsync();
             if (contact==null)
             {
                 contact = new Contact();

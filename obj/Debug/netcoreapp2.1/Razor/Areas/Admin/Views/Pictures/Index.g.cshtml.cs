@@ -56,7 +56,7 @@ namespace AspNetCore
             WriteLiteral("\r\n\r\n<div class=\"row heading-bg\">\r\n    <div class=\"col-lg-3 col-md-4 col-sm-4 col-xs-12\">\r\n        ");
             EndContext();
             BeginContext(251, 99, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9dc2500e18f422f8642b8be44f70746", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb228432f3e94eb7981e669c164e3bea", async() => {
                 BeginContext(311, 35, true);
                 WriteLiteral("<i class=\"fa fa-plus\"></i> Thêm mới");
                 EndContext();
@@ -185,7 +185,7 @@ WriteAttributeValue("", 1096, item.ImageUrl, 1096, 14, false);
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1821, 113, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "95fc289aefd94b2f9fdcd128d08f1c72", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ecfbff02af0e4261a3301c4eead1a1ca", async() => {
                 BeginContext(1901, 29, true);
                 WriteLiteral("<i class=\"fa  fa-pencil\"></i>");
                 EndContext();

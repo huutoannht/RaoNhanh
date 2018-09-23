@@ -264,10 +264,6 @@ namespace NetCore.Models.EntitiesFramework
                     .HasMaxLength(200)
                     .IsUnicode(false);
 
-                entity.Property(e => e.SiteId)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
                 entity.Property(e => e.UpdatedOnUtc).HasColumnType("datetime");
 
                 entity.HasOne(d => d.Product)

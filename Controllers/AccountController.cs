@@ -25,7 +25,6 @@ namespace NetCore.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IEmailSender _emailSender;
         private readonly ILogger _logger;
-        string urlSite = "~/Views/satmanhcuong.com/Account";
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
@@ -49,8 +48,7 @@ namespace NetCore.Controllers
             // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
             ViewBag.ReturnUrl = returnUrl;
-            urlSite = "~/Views/" + ViewBag.SiteId + "/Account";
-            return View(urlSite + "/Login.cshtml");
+            return View();
         }
 
         [HttpPost]
@@ -82,7 +80,7 @@ namespace NetCore.Controllers
                 {
                     ModelState.AddModelError(string.Empty, "Email hoặc mật khẩu chưa chính xác!.");
                     ViewBag.ReturnUrl = returnUrl;
-                    urlSite = "~/Views/" + ViewBag.SiteId + "/Account";
+                    var urlSite = "~/Views/" + ViewBag.SiteId + "/Account";
                     return View(urlSite + "/Login.cshtml");
                 }
             }

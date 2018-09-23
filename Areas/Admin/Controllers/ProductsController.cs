@@ -32,7 +32,7 @@ namespace NetCore.Areas.Admin.Controllers
         public async Task<ActionResult> Index()
         {
             string siteId = ViewBag.SiteId;
-            var products = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted && p.SiteId == siteId).OrderByDescending(m => m.UpdatedOnUtc);
+            var products = _context.Product.Include(p => p.Category).Where(p => !p.IsDeleted ).OrderByDescending(m => m.UpdatedOnUtc);
             return View(await products.ToListAsync());
         }
 
@@ -55,7 +55,7 @@ namespace NetCore.Areas.Admin.Controllers
         public ActionResult Create()
         {
             string siteId = ViewBag.SiteId;
-            ViewBag.CategoryId = new SelectList(_context.Category.Where(m => !m.IsDeleted && m.SiteId == siteId), "CategoryId", "Name");
+            ViewBag.CategoryId = new SelectList(_context.Category.Where(m => !m.IsDeleted ), "CategoryId", "Name");
             return View();
         }
 
@@ -91,7 +91,7 @@ namespace NetCore.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.CategoryId = new SelectList(_context.Category.Where(m => !m.IsDeleted && m.SiteId == siteId), "CategoryId", "Name", product.CategoryId);
+            ViewBag.CategoryId = new SelectList(_context.Category.Where(m => !m.IsDeleted ), "CategoryId", "Name", product.CategoryId);
             return View(product);
         }
 
@@ -108,7 +108,7 @@ namespace NetCore.Areas.Admin.Controllers
                 return NotFound();
             }
             string siteId = ViewBag.SiteId;
-            ViewBag.CategoryId = new SelectList(_context.Category.Where(m => !m.IsDeleted && m.SiteId == siteId), "CategoryId", "Name", product.CategoryId);
+            ViewBag.CategoryId = new SelectList(_context.Category.Where(m => !m.IsDeleted ), "CategoryId", "Name", product.CategoryId);
             return View(product);
         }
 

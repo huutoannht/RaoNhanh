@@ -23,7 +23,7 @@ namespace NetCore.Controllers
         public async Task<ActionResult> GetById(string id)
         {
             string siteId = ViewBag.SiteId;
-            var product = await _context.Product.Include(p => p.Category).Include(p => p.PictureNavigation).Where(p => !p.IsDeleted && p.ProductAlias == id && p.SiteId == siteId).FirstOrDefaultAsync();
+            var product = await _context.Product.Include(p => p.Category).Include(p => p.PictureNavigation).Where(p => !p.IsDeleted && p.ProductAlias == id ).FirstOrDefaultAsync();
             if (product == null)
             {
                 return NotFound();
@@ -38,7 +38,7 @@ namespace NetCore.Controllers
         public async Task<ActionResult> Compare(string id)
         {
             string siteId = ViewBag.SiteId;
-            var product = await _context.Product.Include(p => p.Category).Include(p => p.PictureNavigation).Where(p => !p.IsDeleted && p.ProductAlias == id && p.SiteId == siteId).FirstOrDefaultAsync();
+            var product = await _context.Product.Include(p => p.Category).Include(p => p.PictureNavigation).Where(p => !p.IsDeleted && p.ProductAlias == id ).FirstOrDefaultAsync();
             if (product == null)
             {
                 return NotFound();

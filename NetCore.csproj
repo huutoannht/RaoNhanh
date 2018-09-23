@@ -13,7 +13,6 @@
     <Compile Remove="Areas\Admin\Views\Shared\**" />
     <Compile Remove="Client\**" />
     <Compile Remove="Models\Common\Exceptions\**" />
-    <Compile Remove="Views\Account\**" />
     <Compile Remove="Views\phuoc.com.vn\**" />
     <Compile Remove="Views\satmanhcuong.com\**" />
     <Compile Remove="Views\yolostudio.tk\**" />
@@ -23,7 +22,6 @@
     <Content Remove="Areas\Admin\Views\Shared\**" />
     <Content Remove="Client\**" />
     <Content Remove="Models\Common\Exceptions\**" />
-    <Content Remove="Views\Account\**" />
     <Content Remove="Views\phuoc.com.vn\**" />
     <Content Remove="Views\satmanhcuong.com\**" />
     <Content Remove="Views\yolostudio.tk\**" />
@@ -33,7 +31,6 @@
     <EmbeddedResource Remove="Areas\Admin\Views\Shared\**" />
     <EmbeddedResource Remove="Client\**" />
     <EmbeddedResource Remove="Models\Common\Exceptions\**" />
-    <EmbeddedResource Remove="Views\Account\**" />
     <EmbeddedResource Remove="Views\phuoc.com.vn\**" />
     <EmbeddedResource Remove="Views\satmanhcuong.com\**" />
     <EmbeddedResource Remove="Views\yolostudio.tk\**" />
@@ -43,7 +40,6 @@
     <None Remove="Areas\Admin\Views\Shared\**" />
     <None Remove="Client\**" />
     <None Remove="Models\Common\Exceptions\**" />
-    <None Remove="Views\Account\**" />
     <None Remove="Views\phuoc.com.vn\**" />
     <None Remove="Views\satmanhcuong.com\**" />
     <None Remove="Views\yolostudio.tk\**" />
@@ -293,64 +289,70 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Views\raonhanh\Account\ConfirmEmail.cshtml">
+    <Content Update="Views\Account\ConfirmEmail.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Account\ExternalLoginFailure.cshtml">
+    <Content Update="Views\Account\ExternalLoginFailure.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Account\ForgotPasswordConfirmation.cshtml">
+    <Content Update="Views\Account\ForgotPasswordConfirmation.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Account\Login.cshtml">
+    <Content Update="Views\Account\Login.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Account\ResetPasswordConfirmation.cshtml">
+    <Content Update="Views\Account\ResetPasswordConfirmation.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Connect\Index.cshtml">
+    <Content Update="Views\Connect\Index.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Home\About.cshtml">
+    <Content Update="Views\Home\About.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Home\Category.cshtml">
+    <Content Update="Views\Home\Category.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Home\GetMenu.cshtml">
+    <Content Update="Views\Home\GetMenu.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Home\Index.cshtml">
+    <Content Update="Views\Home\Index.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Home\Slide.cshtml">
+    <Content Update="Views\Home\Slide.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Price\Index.cshtml">
+    <Content Update="Views\Price\Index.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Product\Compare.cshtml">
+    <Content Update="Views\Product\Compare.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Product\Index.cshtml">
+    <Content Update="Views\Product\Index.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Shared\Error.cshtml">
+    <Content Update="Views\Shared\Error.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Shared\Lockout.cshtml">
+    <Content Update="Views\Shared\Lockout.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Shared\_Layout.cshtml">
+    <Content Update="Views\Shared\_Layout.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Shared\_LayoutAdmin.cshtml">
+    <Content Update="Views\Shared\_LayoutAdmin.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Shared\_LayoutDetail.cshtml">
+    <Content Update="Views\Shared\_LayoutDetail.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\raonhanh\Shared\_LayoutLogin.cshtml">
+    <Content Update="Views\Shared\_LayoutLogin.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
   </ItemGroup>

@@ -16,12 +16,11 @@ namespace NetCore.Controllers
             _context = context;
         }
         // GET: Connect
-        string urlSite = "~/Views/satmanhcuong.com/Connect";
         public async Task<ActionResult> Index()
         {
-            urlSite = "~/Views/" + ViewBag.SiteId + "/Connect";
+            var urlSite = "~/Views/" + ViewBag.SiteId + "/Connect";
             string siteId = ViewBag.SiteId;
-            Contact contact = await _context.Contact.Where(m => m.SiteId == siteId).FirstOrDefaultAsync();
+            Contact contact = await _context.Contact.FirstOrDefaultAsync();
             if (contact==null)
             {
                 contact = new Contact();

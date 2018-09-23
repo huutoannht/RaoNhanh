@@ -27,12 +27,11 @@ namespace NetCore.Areas.Admin.Controllers
             _context = context;
             _environment = hostingEnvironment;
         }
-        string urlSite = "~/Views/satmanhcuong.com/Admin/Pictures";
         // GET: Admin/Pictures
         public async Task<ActionResult> Index()
         {
             string siteId = ViewBag.SiteId;
-            var pictures = await _context.Picture.Where(m => m.SiteId == siteId && m.TypePicture == Constants.TYPE_PICTURE.Slide).ToListAsync();
+            var pictures = await _context.Picture.Where(m =>   m.TypePicture == Constants.TYPE_PICTURE.Slide).ToListAsync();
             return View(pictures);
         }
 
@@ -115,7 +114,6 @@ namespace NetCore.Areas.Admin.Controllers
                 picture.TypePicture = Constants.TYPE_PICTURE.Slide;
             }
             picture.UpdatedOnUtc = DateTime.Now;
-            picture.SiteId = ViewBag.SiteId;
             await _context.SaveChangesAsync();
             TempData["Message"] = "update";
             return Redirect("~/Admin/Pictures");
@@ -135,7 +133,6 @@ namespace NetCore.Areas.Admin.Controllers
                 picture.ImageName = filePicture.FileName;
                 picture.ImageUrl = image;
                 picture.TypePicture = Constants.TYPE_PICTURE.Slide;
-                picture.SiteId = ViewBag.SiteId;
 
                 _context.Picture.Add(picture);
                 await _context.SaveChangesAsync();
@@ -165,7 +162,6 @@ namespace NetCore.Areas.Admin.Controllers
                         {
                             picture = new Picture();
                             picture.ProductId = productid;
-                            picture.SiteId = ViewBag.SiteId;
                             picture.ImageName = item.FileName;
                             picture.ImageUrl = image;
                             picture.TypePicture = Constants.TYPE_PICTURE.Product;
