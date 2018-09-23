@@ -16,6 +16,7 @@ using Microsoft.Extensions.Logging;
 using NetCore.Extensions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using AutoMapper;
 
 namespace NetCore
 {
@@ -66,6 +67,8 @@ namespace NetCore
                 loggingBuilder.AddSeq();
                // loggingBuilder.AddConfiguration(Configuration.GetSection("Logging"));
             });
+
+            services.AddAutoMapper(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

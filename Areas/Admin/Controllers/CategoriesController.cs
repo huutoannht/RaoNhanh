@@ -37,7 +37,7 @@ namespace NetCore.Areas.Admin.Controllers
            // string data=await CachingExtensions.GetSetObjectAsync<string>(_distributedCache, "a", "1");
 
             string siteId = ViewBag.SiteId;
-            return View( await _context.Category.Where(p => p.SiteId == siteId).ToListAsync());
+            return View( await _context.Category.ToListAsync());
         }
 
         // GET: Admin/Categories/Details/5
@@ -73,7 +73,6 @@ namespace NetCore.Areas.Admin.Controllers
                 _context.Category.Add(category);
                 category.CreatedOnUtc = DateTime.Now;
                 category.UpdatedOnUtc = DateTime.Now;
-                category.SiteId = ViewBag.SiteId;
                 var path = Path.Combine(_environment.WebRootPath, Constants.LocaltionImage);
                 var image = FileExtensions.UploadImage(filePicture, path);
                 category.Picture = image;
@@ -110,7 +109,6 @@ namespace NetCore.Areas.Admin.Controllers
             {
                 _context.Entry(category).State = EntityState.Modified;
                 category.UpdatedOnUtc = DateTime.Now;
-                category.SiteId = ViewBag.SiteId;
                 if (filePicture!=null && filePicture.Length>0)
                 {
                     var path = Path.Combine(_environment.WebRootPath, Constants.LocaltionImage);

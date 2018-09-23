@@ -1,18 +1,17 @@
-﻿using System;
+﻿using NetCore.Models.EntitiesFramework;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
-namespace NetCore.Models.EntitiesFramework
+namespace NetCore.Models.ViewModel
 {
-    public partial class Product
+    public class ProductDTO
     {
-        public Product()
-        {
-            PictureNavigation = new HashSet<Picture>();
-        }
-
         public int ProductId { get; set; }
         public int CategoryId { get; set; }
+        [DisplayName("Tiêu đề tin")]
         public string Name { get; set; }
+        [DisplayName("Mô tả")]
         public string ShortDescription { get; set; }
         public string FullDescription { get; set; }
         public bool ShowOnHomePage { get; set; }
@@ -29,13 +28,20 @@ namespace NetCore.Models.EntitiesFramework
         public string ProductAlias { get; set; }
         public int? See { get; set; }
         public string PictureSmall { get; set; }
+        [DisplayName("Tên công ty tuyển dụng")]
         public string NameCompany { get; set; }
+        [DisplayName("Địa chỉ")]
         public int? AddressId { get; set; }
         public int? CapacityPeople { get; set; }
+        [DisplayName("Số điện thoại")]
         public string PhoneNumber { get; set; }
+        [DisplayName("Người tuyển dụng")]
         public string Recruiter { get; set; }
+        [DisplayName("Diện tích")]
         public double? Area { get; set; }
+        [DisplayName("Danh mục đăng tin")]
         public int? PostingCategoryId { get; set; }
+        [DisplayName("Loại tin")]
         public int? ItemCategoryId { get; set; }
 
         public Address Address { get; set; }

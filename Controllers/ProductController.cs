@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -13,10 +14,13 @@ namespace NetCore.Controllers
     public class ProductController : Controller
     {
         private readonly ProductContext _context;
+        private readonly IMapper _mapper;
 
-        public ProductController(ProductContext context)
+        public ProductController(ProductContext context,
+            IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
         // GET: Product
         public async Task<ActionResult> GetById(string id)
@@ -34,6 +38,9 @@ namespace NetCore.Controllers
         }
         public ActionResult Create()
         {
+            ViewBag.CategoryId = new SelectList(_context.Category.Where(m => !m.IsDeleted), "CategoryId", "Name");
+            ViewBag.PostingCategoryId = new SelectList(_context.PostingCategory.Where(m => !m.IsDeleted), "Id", "NamePostingCategory");
+            ViewBag.ItemCategoryId = new SelectList(_context.ItemCategory.Where(m => !m.IsDeleted), "Id", "NameItemCategory");
             return View();
         }
         public async Task<ActionResult> Compare(string id)

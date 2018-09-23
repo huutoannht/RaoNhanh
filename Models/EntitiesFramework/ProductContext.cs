@@ -15,6 +15,7 @@ namespace NetCore.Models.EntitiesFramework
         {
         }
 
+        public virtual DbSet<Address> Address { get; set; }
         public virtual DbSet<AspNetRoleClaims> AspNetRoleClaims { get; set; }
         public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
         public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
@@ -44,11 +45,18 @@ namespace NetCore.Models.EntitiesFramework
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Address>(entity =>
+            {
+                entity.Property(e => e.CountryId).HasMaxLength(450);
+
+                entity.Property(e => e.NameAddress).HasMaxLength(256);
+            });
+
             modelBuilder.Entity<AspNetRoleClaims>(entity =>
             {
-                entity.Property(e => e.RoleId)
-                    .IsRequired()
-                    .HasMaxLength(450);
+                entity.HasIndex(e => e.RoleId);
+
+                entity.Property(e => e.RoleId).IsRequired();
 
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.AspNetRoleClaims)
@@ -66,9 +74,9 @@ namespace NetCore.Models.EntitiesFramework
 
             modelBuilder.Entity<AspNetUserClaims>(entity =>
             {
-                entity.Property(e => e.UserId)
-                    .IsRequired()
-                    .HasMaxLength(450);
+                entity.HasIndex(e => e.UserId);
+
+                entity.Property(e => e.UserId).IsRequired();
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.AspNetUserClaims)
@@ -79,9 +87,9 @@ namespace NetCore.Models.EntitiesFramework
             {
                 entity.HasKey(e => new { e.LoginProvider, e.ProviderKey });
 
-                entity.Property(e => e.UserId)
-                    .IsRequired()
-                    .HasMaxLength(450);
+                entity.HasIndex(e => e.UserId);
+
+                entity.Property(e => e.UserId).IsRequired();
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.AspNetUserLogins)
@@ -91,6 +99,8 @@ namespace NetCore.Models.EntitiesFramework
             modelBuilder.Entity<AspNetUserRoles>(entity =>
             {
                 entity.HasKey(e => new { e.UserId, e.RoleId });
+
+                entity.HasIndex(e => e.RoleId);
 
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.AspNetUserRoles)
@@ -127,16 +137,13 @@ namespace NetCore.Models.EntitiesFramework
             {
                 entity.Property(e => e.CreatedOnUtc).HasColumnType("datetime");
 
+                entity.Property(e => e.KeyValue).HasMaxLength(10);
+
                 entity.Property(e => e.Name)
                     .IsRequired()
                     .HasMaxLength(400);
 
                 entity.Property(e => e.Picture).HasMaxLength(256);
-
-                entity.Property(e => e.SiteId)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
 
                 entity.Property(e => e.UpdatedOnUtc).HasColumnType("datetime");
             });
@@ -202,6 +209,8 @@ namespace NetCore.Models.EntitiesFramework
             {
                 entity.ToTable("Core_District");
 
+                entity.HasIndex(e => e.StateOrProvinceId);
+
                 entity.Property(e => e.Name)
                     .IsRequired()
                     .HasMaxLength(450);
@@ -216,7 +225,7 @@ namespace NetCore.Models.EntitiesFramework
             {
                 entity.ToTable("Core_StateOrProvince");
 
-                entity.Property(e => e.CountryId).HasMaxLength(450);
+                entity.HasIndex(e => e.CountryId);
 
                 entity.Property(e => e.Name)
                     .IsRequired()
@@ -238,10 +247,17 @@ namespace NetCore.Models.EntitiesFramework
                 entity.Property(e => e.UserCreated).HasMaxLength(256);
 
                 entity.Property(e => e.UserModifed).HasMaxLength(256);
+
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.ItemCategory)
+                    .HasForeignKey(d => d.CategoryId)
+                    .HasConstraintName("FK_ItemCategory_Category");
             });
 
             modelBuilder.Entity<Picture>(entity =>
             {
+                entity.HasIndex(e => e.ProductId);
+
                 entity.Property(e => e.CreatedOnUtc).HasColumnType("datetime");
 
                 entity.Property(e => e.Description).HasMaxLength(1000);
@@ -264,6 +280,10 @@ namespace NetCore.Models.EntitiesFramework
                     .HasMaxLength(200)
                     .IsUnicode(false);
 
+                entity.Property(e => e.SiteId)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.UpdatedOnUtc).HasColumnType("datetime");
 
                 entity.HasOne(d => d.Product)
@@ -281,11 +301,16 @@ namespace NetCore.Models.EntitiesFramework
                 entity.Property(e => e.NamePostingCategory).HasMaxLength(256);
 
                 entity.Property(e => e.UserCreated).HasMaxLength(256);
+
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.PostingCategory)
+                    .HasForeignKey(d => d.CategoryId)
+                    .HasConstraintName("FK_PostingCategory_Category");
             });
 
             modelBuilder.Entity<Product>(entity =>
             {
-                entity.Property(e => e.AddressId).HasColumnName("AddressID");
+                entity.HasIndex(e => e.CategoryId);
 
                 entity.Property(e => e.CreatedOnUtc).HasColumnType("datetime");
 
@@ -313,18 +338,28 @@ namespace NetCore.Models.EntitiesFramework
 
                 entity.Property(e => e.Recruiter).HasMaxLength(256);
 
-                entity.Property(e => e.SiteId)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
                 entity.Property(e => e.UpdatedOnUtc).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Address)
+                    .WithMany(p => p.Product)
+                    .HasForeignKey(d => d.AddressId)
+                    .HasConstraintName("FK_Product_Address");
 
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Product)
                     .HasForeignKey(d => d.CategoryId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Product_Category");
+
+                entity.HasOne(d => d.ItemCategory)
+                    .WithMany(p => p.Product)
+                    .HasForeignKey(d => d.ItemCategoryId)
+                    .HasConstraintName("FK_Product_ItemCategory");
+
+                entity.HasOne(d => d.PostingCategory)
+                    .WithMany(p => p.Product)
+                    .HasForeignKey(d => d.PostingCategoryId)
+                    .HasConstraintName("FK_Product_PostingCategory");
             });
         }
     }

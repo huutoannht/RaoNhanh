@@ -77,6 +77,13 @@ C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\NetCore\obj\Debug\netcorea
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\NetCore\obj\Debug\netcoreapp2.1\NetCore.dll
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\NetCore\obj\Debug\netcoreapp2.1\NetCore.pdb
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\NetCore\obj\Debug\netcoreapp2.1\NetCore.csproj.CopyComplete
+C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.deps.json
+C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.runtimeconfig.json
+C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.runtimeconfig.dev.json
+C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.dll
+C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.pdb
+C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.Views.dll
+C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.Views.pdb
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.csproj.CoreCompileInputs.cache
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.RazorAssemblyInfo.cache
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.RazorAssemblyInfo.cs
@@ -88,8 +95,6 @@ C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcore
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.RazorCoreGenerate.cache
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Analytics\Index.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Categories\Create.g.cshtml.cs
-C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Categories\Delete.g.cshtml.cs
-C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Categories\Details.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Categories\Edit.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Categories\Index.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Communicates\Create.g.cshtml.cs
@@ -109,7 +114,6 @@ C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcore
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Pictures\EditSlide.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Pictures\Index.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Create.g.cshtml.cs
-C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Details.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Edit.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Index.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Views\Account\ConfirmEmail.g.cshtml.cs
@@ -125,6 +129,7 @@ C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcore
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Slide.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Views\Price\Index.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Views\Product\Compare.g.cshtml.cs
+C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Views\Product\Create.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Views\Product\Index.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Lockout.g.cshtml.cs
@@ -138,15 +143,8 @@ C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcore
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.RazorTargetAssemblyInfo.cache
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.RazorTargetAssemblyInfo.cs
+C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.Views.pdb
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.dll
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.pdb
-C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.deps.json
-C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.runtimeconfig.json
-C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.runtimeconfig.dev.json
-C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.dll
-C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.pdb
-C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.Views.dll
-C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.Views.pdb
-C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.Views.pdb
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.csproj.CopyComplete
-C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Views\Product\Create.g.cshtml.cs
+C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.csprojAssemblyReference.cache

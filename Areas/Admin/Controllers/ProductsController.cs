@@ -72,7 +72,6 @@ namespace NetCore.Areas.Admin.Controllers
                 _context.Product.Add(product);
                 product.CreatedOnUtc = DateTime.Now;
                 product.UpdatedOnUtc = DateTime.Now;
-                product.SiteId = siteId;
                 if (filePicture != null && filePicture.Length > 0)
                 {
                     var path = Path.Combine(_environment.WebRootPath, Constants.LocaltionImage);
@@ -122,7 +121,6 @@ namespace NetCore.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 _context.Entry(product).State = EntityState.Modified;
-                product.SiteId = ViewBag.SiteId;
                 product.UpdatedOnUtc = DateTime.Now;
                 if (filePicture != null && filePicture.Length > 0)
                 {
@@ -136,7 +134,7 @@ namespace NetCore.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            ViewBag.CategoryId = new SelectList(_context.Category.Where(m=>!m.IsDeleted && m.SiteId==product.SiteId), "CategoryId", "Name", product.CategoryId);
+            ViewBag.CategoryId = new SelectList(_context.Category.Where(m=>!m.IsDeleted ), "CategoryId", "Name", product.CategoryId);
             return View(product);
         }
 

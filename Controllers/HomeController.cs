@@ -10,6 +10,7 @@ using NetCore.Models.Common;
 using NetCore.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Caching.Distributed;
+using NetCore.Models.ViewModel;
 
 namespace NetCore.Controllers
 {
