@@ -1,0 +1,162 @@
+﻿@model NetCore.Models.EntitiesFramework.Contact
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        #map {
+            height: 300px;
+        }
+    </style>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/Content/studio/css/css.css" rel="stylesheet">
+    <link href="~/Content/studio/css/css1.css" rel="stylesheet">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Photobooth - Contacts</title>
+    <link rel="stylesheet" href="~/Content/studio/css/kube.css">
+    <link rel="stylesheet" href="~/Content/studio/font/font-awesome.css">
+    <link rel="stylesheet" href="~/Content/studio/css/animate.min.css">
+    <link rel="stylesheet" href="~/Content/studio/css/style.css">
+ 
+</head>
+<body cz-shortcut-listen="true">
+
+    <header class="photobooth_header">
+        <div class="photobooth_container">
+            <div class="row">
+
+                <div class="col col-12 photobooth_def_header">
+                    <div class="photobooth_logo_cont">
+                        <a href="/" class="photobooth_image_logo">
+
+                        </a>
+                    </div>
+                    <div class="partialContents photobooth_black" data-url="@Url.Content("~/Home/GetMenuStudio/1")">
+                        <img src="~/Content/dist/img/loading.gif" />
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="mobile_header ">
+                    <a href="http://pixel-mafia.com/demo/html-templates/photobooth/index.html" class="photobooth_image_logo"><!-- <img src="img/logo-black.png" alt=""> --></a>
+                    <a href="javascript:void(0)" class="btn_mobile_menu">
+                        <span class="photobooth_menu_line1"></span>
+                        <span class="photobooth_menu_line2"></span>
+                        <span class="photobooth_menu_line3"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="photobooth_contacts">
+        <div class="row">
+            <div class="col col-12 photobooth_content">
+                <div class="row align-center photobooth_clients_title">
+                    <div class="col col-8 ">
+                        <h1 class="animated fadeInLeft">Liên hệ</h1>
+                    </div>
+                </div>
+                <div class="photobooth_container">
+                    <div id="map"></div>
+                </div>
+                <div class="photobooth_client_contacts">
+                    <div class="photobooth_container photobooth_anim_block_top_fade photobooth_hidden photobooth_visible animated fadeInUp">
+                        <div class="row gutters">
+                            <div class="col col-8">
+                                <div class="photobooth_form_block ">
+                                    <form action="~/Home/CreateContact" method="post" class="photobooth_form">
+                                        <div class="row ">
+                                            <div class="col col-4">
+                                                <input type="text" class="-name " name="name" placeholder="Tên *" required>
+                                            </div>
+                                            <div class="col col-4">
+                                                <input type="text" class="" name="email" placeholder="Email ">
+                                            </div>
+                                            <div class="col col-4">
+                                                <input type="text" class="" name="phone" placeholder="Phone*" required>
+                                            </div>
+                                        </div>
+                                        <textarea class="form_comment" name="message" placeholder="Tin nhắn" required></textarea>
+                                        <input class="" type="submit" value="Gửi">
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col col-4">
+                                <div class="photobooth_contact_info">
+                                    <h6>PHONE:</h6>
+                                    <p>@Model.Phone</p>
+                                    <h6>ĐỊA CHỈ:</h6>
+                                    <p>@Model.Address</p>
+                                    <h6>EMAIL:</h6>
+                                    <p><a href="mailto: @Model.Email">@Model.Email</a></p>
+                                    <ul class="photobooth_social_block">
+                                        <li><a class="facebook" href="@Model.Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="photobooth_footer ">
+        <div class="row">
+            <div class="col col-12">
+                <div class="photobooth_copy_text">Copyright © @DateTime.Now.Year @ViewBag.SiteId. All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/Content/studio/js/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/studio/js/js.js"></script>
+    <script src="~/Content/studio/js/jquery.viewportchecker.min.js"></script>
+    <script src="~/Content/studio/js/mapcontrol.js"></script>
+    <script src="~/Content/studio/js/site.js"></script>
+    <script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?callback=loadMap"></script>
+    <script>
+        function initMap() {
+            var contentString =
+            '<div class="map-info-window">' +
+            '<p><img src="assets/images/logo-dark.png" alt=""></p>' +
+            '<p><strong>@ViewBag.SiteId</strong></p>' +
+            '<p><i class="fa fa-map-marker"></i> @Model.Address</p>' +
+            '<p><i class="fa fa-phone"></i>  @Model.Phone</p>' +
+            '<p><i class="fa fa-clock-o"></i> @Model.TimeWorking</p>' +
+            '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+            //set default pposition
+            //var myLatLng = { lat: @Model.Latitude, lng:  };
+            //var myLatLng = { lat: @Model.Latitude, lng: @Model.Longitude };
+           // var myLatLng = { lat: 105.681333, lng: 18.679585 };
+            var myLatLng = { lat: 18.670524, lng: 105.690379 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: myLatLng,
+                styles: [{ "featureType": "administrative", "elementType": "all", "stylers": [{ "visibility": "on" }, { "saturation": -100 }, { "lightness": 20 }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "visibility": "on" }, { "saturation": -100 }, { "lightness": 40 }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "visibility": "on" }, { "saturation": -10 }, { "lightness": 30 }] }, { "featureType": "landscape.man_made", "elementType": "all", "stylers": [{ "visibility": "simplified" }, { "saturation": -60 }, { "lightness": 10 }] }, { "featureType": "landscape.natural", "elementType": "all", "stylers": [{ "visibility": "simplified" }, { "saturation": -60 }, { "lightness": 60 }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }, { "saturation": -100 }, { "lightness": 60 }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }, { "saturation": -100 }, { "lightness": 60 }] }]
+            });
+            //set marker
+            var image = 'Content/assets/images/map-icon.png';
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: "Hello World!",
+                icon: image
+            });
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_UQuWHzqyOqHbp4IeFE7-Fa8m41uMTRg&amp;callback=initMap"></script>
+</body>
+</html>

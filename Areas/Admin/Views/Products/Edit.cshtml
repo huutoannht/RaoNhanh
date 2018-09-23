@@ -1,0 +1,96 @@
+﻿@model NetCore.Models.EntitiesFramework.Product
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm(
+                null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Product</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ProductId)
+        @Html.HiddenFor(model => model.CreatedOnUtc)
+        @Html.HiddenFor(model => model.Picture)
+        @Html.HiddenFor(model => model.PictureSmall)
+        <div class="form-group">
+            <label class="control-label col-md-2" for="CategoryId">Loại sản phẩm</label>
+            <div class="col-md-5">
+                @Html.DropDownList("CategoryId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CategoryId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="CategoryId">Tên sản phẩm</label>
+            <div class="col-md-7">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @required = "true" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="ShortDescription">Mô tả ngắn</label>
+            <div class="col-md-10">
+                <textarea name="ShortDescription" class="" rows="4" cols="120">@Model.ShortDescription</textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="FullDescription">Mô tả</label>
+            <div class="col-md-10">
+                <textarea name="FullDescription" class="summernote">@Model.FullDescription</textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Price">Ảnh</label>
+            <div class="col-md-5">
+                <input type="file" class="dropify" name="filePicture" data-height="300" data-max-file-size-preview="3M" data-max-file-size="3M" data-default-file="@Model.Picture" />
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Price">Giá</label>
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control", @type = "number" } })
+                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="OldPrice">Giá cũ</label>
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.OldPrice, new { htmlAttributes = new { @class = "form-control", @type = "number" } })
+                @Html.ValidationMessageFor(model => model.OldPrice, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2" for="ShowOnHomePage"></label>
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.ShowOnHomePage, new { @class = "" })<label for="ShowOnHomePage">Hiển thị trang chủ?</label>
+                @Html.ValidationMessageFor(model => model.ShowOnHomePage, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="col-md-offset-1 col-md-5">
+                    <input type="submit" value="Cập nhật" class="btn btn-success" />
+                    <a href="@Url.Content("~/Admin/Products")" class="btn btn-default">Quay lại</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

@@ -1,0 +1,71 @@
+﻿@model NetCore.Models.EntitiesFramework.Category
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="row heading-bg">
+    <!-- Breadcrumb -->
+    <div class=" col-xs-12">
+        <ol class="breadcrumb">
+            <li><a href="/Admin/Categories"><span>Danh sách</span></a></li>
+            <li class="active"><span>Tạo mới</span></li>
+        </ol>
+    </div>
+    <!-- /Breadcrumb -->
+</div>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Thêm mới loại sản phẩm</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @required = "true" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Description">Mô tả</label>
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Description">Thứ tự hiển thị</label>
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.DisplayOrder, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DisplayOrder, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2" for="IsDeleted"></label>
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.ShowOnHomePage, new { @class = "" })<label for="ShowOnHomePage">Hiển thị trang chủ?</label>
+                @Html.ValidationMessageFor(model => model.ShowOnHomePage, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Price">Ảnh</label>
+            <div class="col-md-5">
+                <input type="file" class="dropify" name="filePicture" data-height="300" data-max-file-size-preview="3M" data-max-file-size="3M" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Tạo mới" class="btn btn-success" />
+                <a href="@Url.Content("~/Admin/Categories")" class="btn btn-default">Quay lại</a>
+            </div>
+        </div>
+    </div>
+}
+

@@ -1,0 +1,139 @@
+﻿@model NetCore.Models.EntitiesFramework.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShortDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShortDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShowOnHomePage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShowOnHomePage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MetaKeywords)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetaKeywords)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MetaDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetaDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OldPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OldPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayOrder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayOrder)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Published)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Published)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedOnUtc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedOnUtc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedOnUtc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedOnUtc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SiteId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

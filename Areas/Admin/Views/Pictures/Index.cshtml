@@ -1,0 +1,74 @@
+﻿@model IEnumerable<NetCore.Models.EntitiesFramework.Picture>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div class="row heading-bg">
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+        <a href="~/Admin/Pictures/AddSlide" class="btn btn-success"><i class="fa fa-plus"></i> Thêm mới</a>
+    </div>
+    <!-- Breadcrumb -->
+    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+        <ol class="breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li class="active"><span>Danh sách ảnh slide</span></li>
+        </ol>
+    </div>
+    <!-- /Breadcrumb -->
+</div>
+<table class="table">
+    <tr>
+        <th>
+            Ảnh
+        </th>
+        <th>
+            Dòng hiển thị 1
+        </th>
+        <th>
+            Trạng thái
+        </th>
+        <th>
+            Thứ tự hiển thị
+        </th>
+        <th>
+            Ngày tạo
+        </th>
+        <th>Hành động</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <img src="@item.ImageUrl" height="50px" width="50px" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShortDecription)
+            </td>
+            <td>
+                @if (!item.IsDeleted)
+                {
+                    <span class="label label-success">chưa xóa</span>
+                }
+                else
+                {
+                    <span class="label label-warning">đã xóa</span>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DisplayOrder)
+            </td>
+            <td>
+                @item.CreatedOnUtc.Value.ToString("dd/MM/yyyy hh:ss")
+            </td>
+            <td>
+                <a href="~/Admin/Pictures/EditSlide/@item.PictureId" class="" title="Chỉnh sửa"><i class="fa  fa-pencil"></i></a>
+                <a onclick="changeRecord('@item.PictureId','Pictures','DeleteSlide')" class="" title="Thay đổi trạng thái">| <i class="fa   fa-refresh"></i></a>
+            </td>
+        </tr>
+    }
+
+</table>

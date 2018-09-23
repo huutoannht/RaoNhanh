@@ -1,0 +1,248 @@
+﻿@model IEnumerable<NetCore.Models.EntitiesFramework.Product>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://pixel-mafia.com/demo/html-templates/photobooth/index.html -->
+<html lang="en" class="photobooth_swipe_box">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photobooth - Slider</title>
+    <link rel="stylesheet" href="~/css/studio.min.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+<body cz-shortcut-listen="true">
+    <header class="photobooth_header">
+        <div class="photobooth_container">
+            <div class="row">
+
+                <div class="col col-12 photobooth_def_header">
+                    <div class="photobooth_logo_cont">
+                        <a href="http://pixel-mafia.com/demo/html-templates/photobooth/index.html" class="photobooth_image_logo">
+
+                        </a>
+                    </div>
+                    <div class="partialContents photobooth_black" data-url="@Url.Content("~/Home/GetMenuStudio")">
+                        <img src="~/Content/dist/img/loading.gif" />
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="mobile_header ">
+                    <a href="http://pixel-mafia.com/demo/html-templates/photobooth/index.html" class="photobooth_image_logo"><!-- <img src="img/logo-black.png" alt=""> --></a>
+                    <a href="javascript:void(0)" class="btn_mobile_menu">
+                        <span class="photobooth_menu_line1"></span>
+                        <span class="photobooth_menu_line2"></span>
+                        <span class="photobooth_menu_line3"></span>
+                    </a>
+                </div><div class="mobile_menu_wrapper" style="display: none;">
+                    <ul class="mobile_menu">
+                        <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/about.html">About Me</a></li>
+                        <li class="menu-item active">
+                            <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-listing.html#">Works</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/index.html">Slider</a></li>
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/grid-gallery.html">Grid Gallery</a></li>
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/ribbon-gallery.html">Ribbon Gallery</a></li>
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/slider-thumbnails.html">Slider with Thumbnails</a></li>
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/masonry-gallery.html">Masonry Gallery</a></li>
+                                <li class="menu-item photobooth_sub_menu_active"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-listing.html">Albums Listing</a></li>
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/split-showcase.html">Split Showcase</a></li>
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-slider.html">Albums Slider</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/clients.html">Happy Clients</a></li>
+                        <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/price.html">Price</a></li>
+                        <li class="menu-item">
+                            <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-listing.html#">Blog</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/blog-grid.html">Blog Grid</a></li>
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/blog-fullwidth.html">Blog Fullwidth</a></li>
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/blog-left-sidebar.html">Blog with Left Sidebar</a></li>
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/blog-right-sidebar.html">Blog with Right sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li class=" menu-item">
+                            <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-listing.html#">Pages</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/typography.html">Typography</a></li>
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/coming-soon.html">Coming Soon</a></li>
+                                <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/404.html">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="http://pixel-mafia.com/demo/html-templates/photobooth/contacts.html">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class=" photobooth_album-listing">
+        <div class="row">
+            <div class="col col-12 photobooth_content">
+                <div class="photobooth_album-listing_element">
+                    <div class="photobooth_isotope">
+                        <div class="grid" style="position: relative; height: 1816.75px;">
+                            @foreach (var picture in Model)
+                            {
+                                <div class="grid-item" style="position: absolute; left: 0px; top: 0px;">
+                                    <a class="photobooth_album_img" href="~/Product/@picture.ProductAlias">
+                                        <img src="@picture.Picture" alt="@picture.Name">
+                                    </a>
+                                    <div class="photobooth_album_content">
+                                        <a href="~/Product/@picture.ProductAlias">
+                                            <h5>@picture.Name</h5>
+                                        </a>
+                                        <div class="photobooth_albums_categories">
+                                            <a href="~/Product/@picture.ProductAlias">@picture.Category.Name</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                            @*<div class="grid-item" style="position: absolute; left: 410px; top: 0px;">
+                                    <a class="photobooth_album_img" href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                        <img src="~/Content/studio/img/image05-915x600.jpg" alt="">
+                                    </a>
+                                    <div class="photobooth_album_content">
+                                        <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                            <h5>Spring Mood</h5>
+                                        </a>
+                                        <div class="photobooth_albums_categories">
+                                            <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">Events</a> / <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">People</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="position: absolute; left: 821px; top: 0px;">
+                                    <a class="photobooth_album_img" href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                        <img src="~/Content/studio/img/image18-915x600.jpg" alt="">
+                                    </a>
+                                    <div class="photobooth_album_content">
+                                        <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                            <h5>Elegance</h5>
+                                        </a>
+                                        <div class="photobooth_albums_categories">
+                                            <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">People</a> / <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">Portrait</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item grid-item--width2" style="position: absolute; left: 0px; top: 386px;">
+                                    <a class="photobooth_album_img" href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                        <img src="~/Content/studio/img/image19-915x600.jpg" alt="">
+                                    </a>
+                                    <div class="photobooth_album_content">
+                                        <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                            <h5>Bright Fashion</h5>
+                                        </a>
+                                        <div class="photobooth_albums_categories">
+                                            <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">Fashion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item grid-item--width2" style="position: absolute; left: 616px; top: 386px;">
+                                    <a class="photobooth_album_img" href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                        <img src="~/Content/studio/img/image04-915x600.jpg" alt="">
+                                    </a>
+                                    <div class="photobooth_album_content">
+                                        <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                            <h5>Street Life</h5>
+                                        </a>
+                                        <div class="photobooth_albums_categories">
+                                            <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">Events</a> / <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">People</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="position: absolute; left: 0px; top: 908px;">
+                                    <a class="photobooth_album_img" href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                        <img src="~/Content/studio/img/image03-915x600.jpg" alt="">
+                                    </a>
+                                    <div class="photobooth_album_content">
+                                        <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                            <h5>Stroll with Joy</h5>
+                                        </a>
+                                        <div class="photobooth_albums_categories">
+                                            <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">Events</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="position: absolute; left: 410px; top: 908px;">
+                                    <a class="photobooth_album_img" href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                        <img src="~/Content/studio/img/image13-915x600.jpg" alt="">
+                                    </a>
+                                    <div class="photobooth_album_content">
+                                        <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                            <h5>Jeans And Tatoos</h5>
+                                        </a>
+                                        <div class="photobooth_albums_categories">
+                                            <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">People</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="position: absolute; left: 821px; top: 908px;">
+                                    <a class="photobooth_album_img" href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                        <img src="~/Content/studio/img/image10-915x600.jpg" alt="">
+                                    </a>
+                                    <div class="photobooth_album_content">
+                                        <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                            <h5>Ledy in Red</h5>
+                                        </a>
+                                        <div class="photobooth_albums_categories">
+                                            <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">Fashion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item grid-item--width2" style="position: absolute; left: 0px; top: 1295px;">
+                                    <a class="photobooth_album_img" href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                        <img src="~/Content/studio/img/image17-915x600.jpg" alt="">
+                                    </a>
+                                    <div class="photobooth_album_content">
+                                        <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                            <h5>Fresh Portraits</h5>
+                                        </a>
+                                        <div class="photobooth_albums_categories">
+                                            <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">People</a> / <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">Portrait</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item grid-item--width2" style="position: absolute; left: 616px; top: 1295px;">
+                                    <a class="photobooth_album_img" href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                        <img src="~/Content/studio/img/image02-915x600.jpg" alt="">
+                                    </a>
+                                    <div class="photobooth_album_content">
+                                        <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-single.html">
+                                            <h5>Vintage</h5>
+                                        </a>
+                                        <div class="photobooth_albums_categories">
+                                            <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">Fashion</a> / <a href="http://pixel-mafia.com/demo/html-templates/photobooth/album-category.html">Portrait</a>
+                                        </div>
+                                    </div>
+                                </div>*@
+                        </div>
+                    </div>
+                    <a class="grid_load_more photobooth_load_more photobooth_button" href="javascript:void(0)">Load More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="photobooth_footer ">
+        <div class="row">
+            <div class="col col-12">
+                <div class="photobooth_copy_text">Copyright © @DateTime.Today.Year @ViewBag.SiteId. All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/Content/studio/js/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/studio/js/owl.carousel.min.js"></script>
+    <script src="~/Content/studio/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/Content/studio/js/isotope.pkgd.min.js"></script>
+    <script src="~/Content/studio/js/jquery.swipebox.js"></script>
+    <script src="~/Content/studio/js/index.js"></script>
+    <script src="~/Content/studio/js/js.js"></script>
+    <script src="~/Content/studio/js/site.js"></script>
+</body>
+</html>

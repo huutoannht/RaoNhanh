@@ -1,0 +1,14 @@
+﻿.btn-secondary{
+    display:none;
+}
+.owl-wrapper-outer .owl-item img{
+    max-height:300px;
+}
+.pointer {
+    cursor: pointer;
+}
+span.logo {
+    font-size: 3em;
+    color: #fff;
+    margin-top: -23px;
+}

@@ -1,0 +1,77 @@
+﻿@model NetCore.Models.EntitiesFramework.Product
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<!-- saved from url=(0076)http://pixel-mafia.com/demo/html-templates/photobooth/slider-thumbnails.html -->
+<html lang="en" class="photobooth_preloader photobooth_fullscreen_slider photobooth_transparent_header photobooth_slider_w_arrows">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.SiteId</title>
+    <link rel="stylesheet" href="~/css/studio.min.css" />
+</head>
+
+<body class="photobooth_fullscreen_slider_page photobooth_slider_thumbs" cz-shortcut-listen="true">
+
+    <header class="photobooth_header">
+
+        <div class="row">
+
+            <div class="col col-12 photobooth_def_header photobooth_left_logo">
+                <div class="photobooth_logo_cont photobooth_white_logo">
+                    <a href="/" class="photobooth_image_logo">
+
+                    </a>
+                </div>
+                <div class="partialContents" data-url="@Url.Content("~/Home/GetMenuStudio")">
+                    <img src="~/Content/dist/img/loading.gif" />
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="photobooth_left_logo mobile_header ">
+                <a href="/" class="photobooth_image_logo photobooth_fullpage"></a>
+                <a href="javascript:void(0)" class="btn_mobile_menu">
+                    <span class="photobooth_menu_line1"></span>
+                    <span class="photobooth_menu_line2"></span>
+                    <span class="photobooth_menu_line3"></span>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="photobooth_fullscreen_slider_wrapper">
+        <div class="photobooth_fullscreen_slider fade wait4load no_fit" data-nav="arrows" data-autoplay="no" data-interval="">
+            @for (int i = 0; i < @Model.PictureNavigation.Count; i++)
+            {
+                var count = i + 1;
+                var slide = "photobooth_fullscreen_slide" + count;
+                <div class="photobooth_fullscreen_slide @slide photobooth_preload_slide" data-count="@count" data-title="" data-descr="" data-src="@Model.PictureNavigation.ToList()[i].ImageUrl" style="background:url(@Model.PictureNavigation.ToList()[i].ImageUrl) no-repeat;">
+                </div>
+            }
+        </div>
+
+        <div class="photobooth_fullscreen_thumbs_wrapper">
+            @for (int i = 0; i < @Model.PictureNavigation.Count; i++)
+            {
+                var count = i + 1;
+                var thumb = "photobooth_fullscreen_thmb" + count;
+
+                <div class="photobooth_fullscreen_thmb @thumb " data-count="@count">
+                    <img src="@Model.PictureNavigation.ToList()[i].ImageUrl" alt="@Model.Name" />
+                </div>
+            }
+        </div>
+    </div>
+
+    <script src="~/Content/studio/js/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/studio/js/slideshow_gallery.js"></script>
+    <script src="~/Content/studio/js/jquery.event.swipe.js"></script>
+    <script src="~/Content/studio/js/js.js"></script>
+    <script src="~/Content/studio/js/site.js"></script>
+</body>
+</html>

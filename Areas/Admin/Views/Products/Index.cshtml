@@ -1,0 +1,94 @@
+﻿@model IEnumerable<NetCore.Models.EntitiesFramework.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div class="row heading-bg">
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+        <a href="~/Admin/Products/Create" class="btn btn-success"><i class="fa fa-plus"></i> Thêm mới</a>
+    </div>
+    <!-- Breadcrumb -->
+    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+        <ol class="breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li class="active"><span>Sản phẩm</span></li>
+        </ol>
+    </div>
+    <!-- /Breadcrumb -->
+</div>
+<table class="table">
+    <tr>
+        <th>
+            Tên sản phẩm
+        </th>
+        <th>
+           Ảnh
+        </th>
+        <th>
+            Giá
+        </th>
+        <th>
+            Giá cũ
+        </th>
+        <th>
+            Hiển thị
+        </th>
+        <th>
+            Thời gian
+        </th>
+        <th>
+            Loại sản phẩm
+        </th>
+        <th>Hành động</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <img style="height:50px; width:50px" src="@item.PictureSmall" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OldPrice)
+            </td>
+            <td>
+                @if (!item.Published)
+                {
+                    <span class="label label-success">có</span>
+                }
+                else
+                {
+                    <span class="label label-warning">không</span>
+                }
+            </td>
+            <td>
+                <span> @item.UpdatedOnUtc.ToString("dd/MM/yyyy hh:ss")</span>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.Name)
+            </td>
+            <td>
+                <a href="~/Admin/Products/Edit/@item.ProductId" class="" title="Chỉnh sửa"><i class="fa  fa-pencil"></i></a>
+                @if (!item.Deleted)
+                {
+                    <a onclick="changeRecord('@item.ProductId','Products')" class=""  title="Xóa">| <i class="fa  fa-trash-o"></i></a>
+                }
+                @if (!item.Published)
+                {
+                    <a onclick="changeRecord('@item.ProductId','Products','Publish')" class="" title="Thay đổi trạng thái">| <i class="fa fa-ban"></i></a>
+                }
+                <a class="" href="~/Admin/Pictures/Create/@item.ProductId"  title="Album ảnh">| <i class="fa fa-file-text-o"></i></a>
+            </td>
+        </tr>
+    }
+
+</table>

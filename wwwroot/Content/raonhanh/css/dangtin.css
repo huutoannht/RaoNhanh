@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cacdanhmuc li {
+    list-style: none;
+    border: 1px solid #80808030;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.ndchinh {
+    position: relative;
+}
+
+.ndchinh li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+}
+
+.cacdanhmuc li.active {
+    background: yellow;
+    color: black;
+    border-radius: 6px;
+}
+
+.hienthi {
+    opacity: 1!important;
+    visibility: visible!important;
+}

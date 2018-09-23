@@ -1,0 +1,70 @@
+﻿@model IEnumerable<NetCore.Models.PictureDTO>
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@using (Html.BeginForm(
+   null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Sản phẩm : @ViewBag.ProductName </h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <input type="hidden" name="ProductId" value="@ViewBag.ProductId" />
+        <div class="form-group">
+            <label class="control-label" for="image-create">Ảnh</label>
+            <div class="file-loading">
+                <input id="image-update" name="filePicture" type="file" multiple class="file" data-overwrite-initial="false">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Cập nhật" class="btn btn-success" />
+                <a href="@Url.Content("~/Admin/Products")" class="btn btn-default">Quay lại</a>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    var existedProductAlbumFiles = @Html.Raw(Json.Serialize(Model));
+    @{
+        var listPicture = (List<NetCore.Models.PictureDTO>)@Model;
+        var arProductAlbums = listPicture.Select(m => m.ImageUrl);
+
+    }
+    if (existedProductAlbumFiles == null || existedProductAlbumFiles.length === 0) {
+        $("#image-update").fileinput({
+            uploadUrl: '/file-upload-batch/2',
+            maxFilePreviewSize: 10240,
+            overwriteInitial: false,
+            showUpload: false
+        });
+    }
+    else {
+        var fileUrls = [];
+        var fileInputs = [];
+        $.each(existedProductAlbumFiles, function (index, album) {
+            fileUrls.push(album.imageUrl);
+            fileInputs.push({
+                url: "/Admin/Pictures/Delete/" + album.productId + "",
+                key: album.pictureId
+            });
+
+        })
+        $("#image-update").fileinput({
+            uploadUrl: "/file-upload-batch/1",
+            uploadAsync: false,
+            maxFileCount: 50,
+            overwriteInitial: false,
+            initialPreviewAsData: true,
+            initialPreview:  fileUrls,
+            initialPreviewConfig: fileInputs
+        });
+    }
+</script>

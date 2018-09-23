@@ -1,0 +1,36 @@
+﻿@model List<NetCore.Models.EntitiesFramework.Picture>
+<div class="photobooth_ribbon_slider_wrapper">
+    <div class="photobooth_ribbon_slider wait4load" data-nav="arrows" data-autoplay="no" data-interval="">
+        <div class="photobooth_ribbon_slide photobooth_ribbon_slide1 photobooth_preload_slide" data-count="1" data-title="" data-descr="" data-ratio="1.6">
+            <img src="@Model.FirstOrDefault().ImageUrl" alt="">
+            <div class="photobooth_ribbon_overlay"></div>
+        </div>
+        <div class="photobooth_ribbon_slide photobooth_ribbon_slide2 photobooth_preload_slide" data-count="2" data-title="" data-descr="" data-ratio="1.6">
+            <img src="@(Model.Count()>=2? Model[1].ImageUrl: Model.FirstOrDefault().ImageUrl)" alt="">
+            <div class="photobooth_ribbon_overlay"></div>
+        </div>
+        <div class="photobooth_ribbon_slide photobooth_ribbon_slide3 photobooth_preload_slide" data-count="3" data-title="" data-descr="" data-ratio="1.6">
+            <img src="@(Model.Count()>=3? Model[2].ImageUrl:Model.FirstOrDefault().ImageUrl)" alt="">
+            <div class="photobooth_ribbon_overlay"></div>
+        </div>
+        <div class="photobooth_ribbon_slide photobooth_ribbon_slide4 photobooth_preload_slide" data-count="4" data-title="" data-descr="" data-ratio="1.6">
+            <img src="@(Model.Count()>=4? Model[3].ImageUrl:Model.FirstOrDefault().ImageUrl)" alt="">
+            <div class="photobooth_ribbon_overlay"></div>
+        </div>
+        <div class="photobooth_ribbon_slide photobooth_ribbon_slide5 photobooth_preload_slide" data-count="5" data-title="" data-descr="" data-ratio="1.6">
+            <img src="@(Model.Count()>=5? Model[4].ImageUrl:Model.FirstOrDefault().ImageUrl)" alt="">
+            <div class="photobooth_ribbon_overlay"></div>
+        </div>
+
+    </div>
+    <div class="photobooth_ribbon_title_wrapper">
+        <h2 class="photobooth_ribbon_title">&nbsp;</h2>
+        <div class="photobooth_ribbon_caption">&nbsp;</div>
+    </div>
+    <a href="javascript:void(0)" class="photobooth_ribbon_btn_prev"></a>
+    <a href="javascript:void(0)" class="photobooth_ribbon_btn_next"></a>
+    <a href="javascript:void(0)" class="photobooth_ribbon_btn_fullview"></a>
+</div>
+<script src="~/Content/studio/js/jquery-3.2.1.min.js"></script>
+<script src="~/Content/studio/js/ribbon_slider.js"></script>
+<script src="~/Content/studio/js/jquery.event.swipe.js"></script>

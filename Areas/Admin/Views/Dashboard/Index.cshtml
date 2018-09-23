@@ -1,0 +1,134 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid">
+    <!-- Title -->
+    <div class="row heading-bg">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+            <a href="/"><h5 class="txt-dark">Trang chủ</h5></a>
+        </div>
+        <!-- Breadcrumb -->
+        <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+            <ol class="breadcrumb">
+                <li><a href="~/Admin/Dashboard" class="active">Dashboard</a></li>
+            </ol>
+        </div>
+        <!-- /Breadcrumb -->
+    </div>
+    <!-- /Title -->
+    <!-- Row -->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-default card-view">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <h6 class="panel-title txt-dark">Quản lý sản phẩm</h6>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-wrapper collapse in">
+                    <div class="panel-body">
+                        <p class="muted">Quản lý thông tin sản phẩm.</p>
+                        <div class="btn-group mt-40">
+                            <div class="dropdown show-on-hover">
+                                <a href="~/Admin/Products"  class="btn btn-warning dropdown-toggle">
+                                    <i class="fa fa-list-ul mr-20"></i>   Danh sách
+                                </a>
+                                <a href="~/Admin/Products/Create" class="btn btn-success dropdown-toggle">
+                                    <i class="fa fa-plus  mr-20"></i>Tạo mới
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="panel panel-default card-view">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <h6 class="panel-title txt-dark">Quản lý loại sản phẩm</h6>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-wrapper collapse in">
+                    <div class="panel-body">
+                        <p class="muted">Quản lý thông tin các loại sản phẩm.</p>
+                        <div class="btn-group mt-40">
+                            <div class="dropdown show-on-hover">
+                                <a href="~/Admin/Categories" class="btn btn-warning dropdown-toggle">
+                                    <i class="fa fa-list-ul mr-20"></i>   Danh sách
+                                </a>
+                                <a href="~/Admin/Categories/Create" class="btn btn-success dropdown-toggle">
+                                    <i class="fa fa-plus  mr-20"></i>Tạo mới
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="panel panel-default card-view">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <h6 class="panel-title txt-dark">Quản lý ảnh slide</h6>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-wrapper collapse in">
+                    <div class="panel-body">
+                        <p class="muted">Quản lý thông tin ảnh slide ở trang chủ.</p>
+                        <div class="btn-group mt-40">
+                            <div class="dropdown show-on-hover">
+                                <a href="~/Admin/Pictures" class="btn btn-warning dropdown-toggle">
+                                    <i class="fa fa-list-ul mr-20"></i>   Danh sách
+                                </a>
+                                <a href="~/Admin/Pictures/AddSlide" class="btn btn-success dropdown-toggle">
+                                    <i class="fa fa-plus  mr-20"></i>Tạo mới
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Row -->
+    <!-- Row -->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-default card-view">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <h6 class="panel-title txt-dark">Quản lý thông tin liên hệ</h6>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-wrapper collapse in">
+                    <div class="panel-body">
+                        <p class="muted">Quản lý thông tin liên hệ.</p>
+                        <div class="btn-group mt-40">
+                            <div class="dropdown show-on-hover">
+                                <a href="~/Admin/Contact/Create" class="btn btn-warning dropdown-toggle">
+                                    <i class="fa fa-save-ul mr-20"></i>   Cập nhật
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    </div>
+   
+    <div class="row">
+      
+    </div>
+
+
+    <div class="seprator-block"></div>
+</div>
