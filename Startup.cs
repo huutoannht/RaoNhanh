@@ -111,7 +111,7 @@ namespace NetCore
                     template: "Product/{id?}",
                     defaults: new { controller = "Product", action = "GetById" });
             });
-//test push to slack
+//Toan NH
         }
     }
 }
