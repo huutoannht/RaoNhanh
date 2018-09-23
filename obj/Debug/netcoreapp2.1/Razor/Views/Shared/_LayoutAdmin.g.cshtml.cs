@@ -114,7 +114,7 @@ using NetCore.Models.ManageViewModels;
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<!-- Mirrored from hencework.com/theme/jetson/full-width-light/inbox.html by HTTrack Website Copier/3.x [XR&CO\'2014], Sat, 04 Nov 2017 05:04:48 GMT -->\r\n");
             EndContext();
             BeginContext(190, 2042, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef702624d0eb4a5f890008aefea898e3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5dabdd174d5740348bada93cc8611036", async() => {
                 BeginContext(196, 364, true);
                 WriteLiteral(@"
     <meta charset=""UTF-8"" />
@@ -128,7 +128,7 @@ using NetCore.Models.ManageViewModels;
     ");
                 EndContext();
                 BeginContext(560, 129, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "1373eef08e6c431d95fe28c4977ba94a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "50d6232135fd49b8bc8d490802ef1e3d", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -147,7 +147,7 @@ using NetCore.Models.ManageViewModels;
                 WriteLiteral("\r\n\r\n    <!-- Custom CSS -->\r\n    ");
                 EndContext();
                 BeginContext(722, 61, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0341708001fe4430900315990af74166", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2fc35116ea6347d58ec21bebcfae858f", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -256,7 +256,7 @@ WriteAttributeValue("", 1902, Url.Content("~/Content/dist/vendors/bower_componen
                 WriteLiteral("></script>\r\n    ");
                 EndContext();
                 BeginContext(2029, 51, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "45bf4a25c7354e13a39ea41d85eeecfc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "581d63d1c5f441d595ca32096092d207", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -300,7 +300,7 @@ WriteAttributeValue("", 2098, Url.Content("~/Content/dist/vendors/bower_componen
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(2234, 70992, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd26b1815f014e14bfc725ca8cfcbfb5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "894635c05cc9429283029c9af7d8a588", async() => {
                 BeginContext(2240, 1121, true);
                 WriteLiteral(@"
     <!--Preloader-->
@@ -326,7 +326,7 @@ WriteAttributeValue("", 2098, Url.Content("~/Content/dist/vendors/bower_componen
                 WriteLiteral("mobile-only-view\" href=\"javascript:void(0);\"><i class=\"zmdi zmdi-more\"></i></a>\r\n                ");
                 EndContext();
                 BeginContext(3361, 592, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a29900e2e0e4cf48b31a1d24a5ae7a3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b67ec347ad7b412484d6c62a915db76b", async() => {
                     BeginContext(3440, 506, true);
                     WriteLiteral(@"
                     <div class=""input-group"">
@@ -498,7 +498,7 @@ WriteAttributeValue("", 2098, Url.Content("~/Content/dist/vendors/bower_componen
                                                 ");
                 EndContext();
                 BeginContext(12975, 52, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ebbae2bde81c4bf2bef1a0b9c5569b4d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1828c45e13b84c879582a249c8a15214", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -517,7 +517,7 @@ WriteAttributeValue("", 2098, Url.Content("~/Content/dist/vendors/bower_componen
                 WriteLiteral("\r\n                                                <span>Circle chair</span>\r\n                                            </a>\r\n                                            <a href=\"#\">\r\n                                                ");
                 EndContext();
                 BeginContext(13260, 53, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0c6b0a7e12ee40dea5b97a3a8805a880", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1cbd2b2f98924c11ae27ffae62759f7b", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -536,7 +536,7 @@ WriteAttributeValue("", 2098, Url.Content("~/Content/dist/vendors/bower_componen
                 WriteLiteral("\r\n                                                <span>square chair</span>\r\n                                            </a>\r\n                                            <a href=\"#\">\r\n                                                ");
                 EndContext();
                 BeginContext(13546, 53, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "faee741594924a11b408c70b921bb131", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "5802cbcd49ce428fb0deb4ed49a8c77a", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -555,7 +555,7 @@ WriteAttributeValue("", 2098, Url.Content("~/Content/dist/vendors/bower_componen
                 WriteLiteral("\r\n                                                <span>semi circle chair</span>\r\n                                            </a>\r\n                                            <a href=\"#\">\r\n                                                ");
                 EndContext();
                 BeginContext(13837, 53, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a75171eb4092468b89786ee99ed69c11", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "20386e75618b485fbfb56f99f36c8f4f", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -574,7 +574,7 @@ WriteAttributeValue("", 2098, Url.Content("~/Content/dist/vendors/bower_componen
                 WriteLiteral("\r\n                                                <span>wooden chair</span>\r\n                                            </a>\r\n                                            <a href=\"#\">\r\n                                                ");
                 EndContext();
                 BeginContext(14123, 53, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "11d211023aeb4e98b85d3638b21900d6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "34c5b75a1e454bb6a1728468b1d9b252", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -667,7 +667,7 @@ WriteAttributeValue("", 2098, Url.Content("~/Content/dist/vendors/bower_componen
                 WriteLiteral("                   ");
                 EndContext();
                 BeginContext(19315, 79, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "04d93829e95b492483c626f1c65c9acc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "28a8cdd23dc64c09a59f5879f9007964", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -725,7 +725,7 @@ WriteAttributeValue("", 2098, Url.Content("~/Content/dist/vendors/bower_componen
                         <a href=""#"" class=""dropdown-toggle pr-0"" data-toggle=""dropdown"">");
                 EndContext();
                 BeginContext(21989, 91, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c59650057afc4e41979d773fedcd28b7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c6fe18c907224dc7a2aea5faa3f15d35", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -807,7 +807,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                             ");
                 EndContext();
                 BeginContext(25191, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "33476f81c9d14a74bf0943771d000b86", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ae340660467c41e0ace826d597cbefbc", async() => {
                     BeginContext(25219, 9, true);
                     WriteLiteral("Danh sách");
                     EndContext();
@@ -828,7 +828,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("\r\n                        </li>\r\n                        <li>\r\n                            ");
                 EndContext();
                 BeginContext(25323, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a7df8a200716485796978913815700e8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3e90119a0f6742e198e7e9a571ad9fd0", async() => {
                     BeginContext(25357, 7, true);
                     WriteLiteral("Tạo mới");
                     EndContext();
@@ -857,7 +857,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                             ");
                 EndContext();
                 BeginContext(25933, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6538866766da4956a2d3d82d33c29160", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "570af2072b904c40a08eb75a32a0d9b9", async() => {
                     BeginContext(25963, 9, true);
                     WriteLiteral("Danh sách");
                     EndContext();
@@ -878,7 +878,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("\r\n                        </li>\r\n                        <li>\r\n                            ");
                 EndContext();
                 BeginContext(26067, 47, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "154fd115c3354d289fe19a9986975ada", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37fb2312504044889825d6776859ed69", async() => {
                     BeginContext(26103, 7, true);
                     WriteLiteral("Tạo mới");
                     EndContext();
@@ -929,7 +929,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                                         ");
                 EndContext();
                 BeginContext(28112, 676, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f74deccf6764f95983ab3149aa82f74", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b283ddc6dd9244a88d9b8c71fc00e9fe", async() => {
                     BeginContext(28170, 611, true);
                     WriteLiteral(@"
                                             <div class=""input-group"">
@@ -968,7 +968,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                                                                     ");
                 EndContext();
                 BeginContext(29415, 80, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0be8fb29fc944e66ab7e7ab154cf76d1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b10b2cae32184e7897317062ef6aebfe", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1000,7 +1000,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("                  ");
                 EndContext();
                 BeginContext(30537, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f398a965b1e24ddb8b7d35d582cf40f3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "aa09a95591e1462da9932118fb79948b", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1032,7 +1032,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("      ");
                 EndContext();
                 BeginContext(31648, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "dad5438c64784765908eb8c5953f5f9d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "6ec822b5b2ba4430986eec7dbb7e6940", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1064,7 +1064,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("                                                ");
                 EndContext();
                 BeginContext(32801, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "07c6f68175e3448b98c7e0c9f759d309", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "79f76f6597074aa8a851e2a7f53ffc77", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1096,7 +1096,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("     ");
                 EndContext();
                 BeginContext(33911, 80, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5b401844a2df4b74b7efba3496f6dda0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "99d698dbcdbb40ae999e107e545400bb", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1128,7 +1128,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("                 ");
                 EndContext();
                 BeginContext(35032, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "04d3d013635040dd81c4a31280b76ed2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4480ad81ae6b412481930a0e151bc068", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1160,7 +1160,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("                     ");
                 EndContext();
                 BeginContext(36158, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9c7b73e5ceac41c69294c7dc6275c167", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e60414eb53804868b407d20130ebdb2a", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1192,7 +1192,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("                   ");
                 EndContext();
                 BeginContext(37282, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f8fdd230f7ed46eb8a871f4f5f9b9182", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "02639b330bc44a2280a20d7c7e2352e0", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1224,7 +1224,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("                                ");
                 EndContext();
                 BeginContext(38419, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "6f62eefa19f643dd9da531ce115929dc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2fd99d073655428da21aa2e3606948d9", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1279,7 +1279,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                                                                     ");
                 EndContext();
                 BeginContext(41238, 96, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "98e367da1f6d4a9496284713f5874a11", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b81d08ca467748b7b1300b9bba658af1", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1335,7 +1335,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("friend-msg-wrap\">\r\n                                                                    ");
                 EndContext();
                 BeginContext(44493, 96, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a83efbe633ee4e4690e517eb7604378f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7a2460e97e9b4184818a901d82d25edc", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1413,7 +1413,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                                                         ");
                 EndContext();
                 BeginContext(49097, 88, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4631e1ffc91242d69066586dab3fcbc6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "49b93c98a3d34739982df3dc74785f56", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1448,7 +1448,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                                                         ");
                 EndContext();
                 BeginContext(50509, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c079ffe8f7a843899ffd12361b118124", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e1682a0715474535b92e6482b19d529f", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1480,7 +1480,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("vascript:void(0)\">\r\n                                                <div class=\"sl-item\">\r\n                                                    <div class=\"sl-avatar avatar avatar-sm avatar-circle\">\r\n                                                        ");
                 EndContext();
                 BeginContext(51877, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c3eb490066854c799dd1f20bb6268d27", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "1b65ec91665644b4b34ead9a04062f1f", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1515,7 +1515,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                                                         ");
                 EndContext();
                 BeginContext(53283, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "67f4de0b6ba84d5bb0b6ff783ec73aac", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ffb1c9480f8148fd9baf53e4e87ddaf5", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1550,7 +1550,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                                                         ");
                 EndContext();
                 BeginContext(54688, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "613bc8f107c948c389e332ee117e86af", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "1c1207d7ea6047e49a27a5f7e7ab8f2e", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1585,7 +1585,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                                                         ");
                 EndContext();
                 BeginContext(56072, 88, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "88a993f973764b8d9a3edc0e47a11858", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f6ca74bfca7b40899d7b5fa84c59534a", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1620,7 +1620,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                                                         ");
                 EndContext();
                 BeginContext(57460, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2b78bf7d81c2446cbe91deec99a1eb6e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "680edf7dea83430485c3ecde7ae8e672", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1843,7 +1843,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
     ");
                 EndContext();
                 BeginContext(69171, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63d7351e81e5466199a562d8f723d2d3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55cbdc9767c044b086dd14a7ef1da59d", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1861,7 +1861,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("\r\n    <!-- Bootstrap Core JavaScript -->\r\n    ");
                 EndContext();
                 BeginContext(69306, 98, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3788bf6920242c4a46edc30a3a92182", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59fc36661c4b4d1981b74f7f8203ae0a", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1879,7 +1879,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("\r\n\r\n    <!-- wysuhtml5 Plugin JavaScript -->\r\n    ");
                 EndContext();
                 BeginContext(69454, 97, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9bb6c10d9719458a8157251f5784c2ad", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ee089cb5ba5468c818f4c5a05845249", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1897,7 +1897,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(69557, 123, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7eaf79aeca224bfa8177ee6e07c19488", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c602451e6a5494080e6d005bc0906da", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1915,7 +1915,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("\r\n\r\n    <!-- Fancy Dropdown JS -->\r\n    ");
                 EndContext();
                 BeginContext(69720, 72, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25333cb1c9e449a1b80e2b0103aec35f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "850f5853032f4db4a0041597bc128958", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1933,7 +1933,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("\r\n\r\n    <!-- Bootstrap Wysuhtml5 Init JavaScript -->\r\n    ");
                 EndContext();
                 BeginContext(69850, 69, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d90ab762b4df4c5d890621820340947e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e9b2172f4ed74ae2b436fb2ac09570a7", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1951,7 +1951,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("\r\n\r\n    <!-- Slimscroll JavaScript -->\r\n    ");
                 EndContext();
                 BeginContext(69963, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e2ca9b9e6fe4b14bca046ce00fcd6ba", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "372749896dc640b6a9eb965bfe7d92fd", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1969,7 +1969,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("\r\n\r\n    <!-- Owl JavaScript -->\r\n    ");
                 EndContext();
                 BeginContext(70062, 101, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b05af75655cd45bc9b5a23bcb15de817", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea2777348e334152ad8e14d133a6b7b5", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1987,7 +1987,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("\r\n\r\n    <!-- Switchery JavaScript -->\r\n    ");
                 EndContext();
                 BeginContext(70206, 95, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2e56917c40f40458083ad28ad2249ce", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "986e5d4def834f53950d14f92d01c7ff", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2005,7 +2005,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("\r\n\r\n    <!-- Init JavaScript -->\r\n    ");
                 EndContext();
                 BeginContext(70339, 49, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b4d395fbde9c440eb740e0313d623cd2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2767a099022841bea976c7d815fa645b", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2023,7 +2023,7 @@ WriteAttributeValue("", 24140, Url.Content("~/Account/LogOff"), 24140, 32, false
                 WriteLiteral("\r\n\r\n    ");
                 EndContext();
                 BeginContext(70396, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eedefa5a4e134c04bd07c1c3917bb48b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e364d38e36d647a0aa336071d62b80ad", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

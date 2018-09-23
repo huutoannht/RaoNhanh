@@ -19,10 +19,8 @@ namespace NetCore.Controllers
             _context = context;
         }
         // GET: Product
-        string urlSite = "~/Views/satmanhcuong.com/Home";
         public async Task<ActionResult> GetById(string id)
         {
-            string siteId = ViewBag.SiteId;
             var product = await _context.Product.Include(p => p.Category).Include(p => p.PictureNavigation).Where(p => !p.IsDeleted && p.ProductAlias == id ).FirstOrDefaultAsync();
             if (product == null)
             {
@@ -32,8 +30,11 @@ namespace NetCore.Controllers
             {
                 image.ImageUrl = image.ImageUrl.Replace("\\", "/");
             }
-            urlSite = "~/Views/" + ViewBag.SiteId + "/Product";
-            return View(urlSite + "/Index.cshtml",product);
+            return View(product);
+        }
+        public ActionResult Create()
+        {
+            return View();
         }
         public async Task<ActionResult> Compare(string id)
         {
@@ -47,8 +48,7 @@ namespace NetCore.Controllers
             {
                 image.ImageUrl = image.ImageUrl.Replace("\\", "/");
             }
-            urlSite = "~/Views/" + ViewBag.SiteId + "/Product";
-            return View(urlSite + "/Compare.cshtml", product);
+            return View(product);
         }
 
     }

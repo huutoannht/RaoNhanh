@@ -149,3 +149,4 @@ C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcore
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\bin\Debug\netcoreapp2.1\NetCore.Views.pdb
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.Views.pdb
 C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\NetCore.csproj.CopyComplete
+C:\Users\huuto\OneDrive\Desktop\SourceCode\TestBanhMy\RaoNhanh\obj\Debug\netcoreapp2.1\Razor\Views\Product\Create.g.cshtml.cs
