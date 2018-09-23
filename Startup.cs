@@ -29,6 +29,7 @@ namespace NetCore
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
         }
 
         public IConfiguration Configuration { get; }
