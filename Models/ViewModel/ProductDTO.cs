@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace NetCore.Models.ViewModel
 {
@@ -17,7 +18,9 @@ namespace NetCore.Models.ViewModel
         public bool ShowOnHomePage { get; set; }
         public string MetaKeywords { get; set; }
         public string MetaDescription { get; set; }
+        [DisplayName("Giá")]
         public decimal? Price { get; set; }
+        [DisplayName("Giá cũ")]
         public decimal? OldPrice { get; set; }
         public int DisplayOrder { get; set; }
         public bool IsPublished { get; set; }
@@ -43,6 +46,15 @@ namespace NetCore.Models.ViewModel
         public int? PostingCategoryId { get; set; }
         [DisplayName("Loại tin")]
         public int? ItemCategoryId { get; set; }
+        [DisplayName("Người bán")]
+        public string Seller { get; set; }
+        [DisplayName("Tỉnh/Thành phố")]
+        public string Provice { get; set; }
+        [DisplayName("Quận/Huyện")]
+        public string District { get; set; }
+        [DisplayName("Địa chỉ")]
+        [Required]
+        public string AddressDetail { get; set; }
 
         public Address Address { get; set; }
         public Category Category { get; set; }

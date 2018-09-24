@@ -36,12 +36,21 @@ namespace NetCore.Controllers
             }
             return View(product);
         }
-        public ActionResult Create()
+        public async Task<ActionResult> Create()
         {
             ViewBag.CategoryId = new SelectList(_context.Category.Where(m => !m.IsDeleted), "CategoryId", "Name");
             ViewBag.PostingCategoryId = new SelectList(_context.PostingCategory.Where(m => !m.IsDeleted), "Id", "NamePostingCategory");
-            ViewBag.ItemCategoryId = new SelectList(_context.ItemCategory.Where(m => !m.IsDeleted), "Id", "NameItemCategory");
+            ViewBag.ItemCategoryId = await _context.ItemCategory.ToListAsync();
+            ViewBag.Provice = new SelectList(_context.CoreStateOrProvince, "Id", "Name");
             return View();
+        }
+        public async Task<JsonResult> GetDistrict(int? id)
+        {
+            if (id!=0)
+            {
+                return new JsonResult(await _context.CoreDistrict.Where(m => m.StateOrProvince.Id == id).ToListAsync());
+            }
+            return null;
         }
         public async Task<ActionResult> Compare(string id)
         {
