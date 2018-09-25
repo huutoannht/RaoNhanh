@@ -105,7 +105,7 @@ namespace NetCore.Areas.Admin.Controllers
             if (filePicture != null && filePicture.Length > 0)
             {
                 var path = Path.Combine(_environment.WebRootPath, Constants.LocaltionImage);
-                var image = FileExtensions.UploadImage(filePicture, path);
+                var image = FileExtensions.Upload(filePicture, path);
 
                 string fileNameOld = filePicture.FileName;
                 picture.ImageAlias = fileNameOld.ToFriendlyUrl() + "_" + FileExtensions.GetUniqueKey(5);
@@ -128,7 +128,7 @@ namespace NetCore.Areas.Admin.Controllers
             if (filePicture != null && filePicture.Length > 0)
             {
                 var path = Path.Combine(_environment.WebRootPath, Constants.LocaltionImage);
-                var image = FileExtensions.UploadImage(filePicture, path);
+                var image = FileExtensions.Upload(filePicture, path);
 
                 picture.ImageName = filePicture.FileName;
                 picture.ImageUrl = image;
@@ -157,7 +157,7 @@ namespace NetCore.Areas.Admin.Controllers
                     foreach (var item in filePicture)
                     {
                         var path = Path.Combine(_environment.WebRootPath, Constants.LocaltionImage);
-                        var image = FileExtensions.UploadImage(item, path);
+                        var image = FileExtensions.Upload(item, path);
                         if (image != null)
                         {
                             picture = new Picture();

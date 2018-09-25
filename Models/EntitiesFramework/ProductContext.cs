@@ -338,6 +338,8 @@ namespace NetCore.Models.EntitiesFramework
 
                 entity.Property(e => e.Recruiter).HasMaxLength(256);
 
+                entity.Property(e => e.Seller).HasMaxLength(256);
+
                 entity.Property(e => e.UpdatedOnUtc).HasColumnType("datetime");
 
                 entity.HasOne(d => d.Address)

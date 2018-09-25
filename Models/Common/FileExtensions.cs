@@ -31,7 +31,7 @@ namespace NetCore.Models.Common
             return result.ToString();
         }
 
-        public static string UploadImage(IFormFile file,string path)
+        public static string Upload(IFormFile file,string path)
         {
             string pathDB = string.Empty;
             if (file!=null&& file.Length > 0)

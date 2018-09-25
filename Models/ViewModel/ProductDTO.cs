@@ -49,12 +49,12 @@ namespace NetCore.Models.ViewModel
         [DisplayName("Người bán")]
         public string Seller { get; set; }
         [DisplayName("Tỉnh/Thành phố")]
-        public string Provice { get; set; }
+        public int Provice { get; set; }
         [DisplayName("Quận/Huyện")]
-        public string District { get; set; }
+        public int District { get; set; }
         [DisplayName("Địa chỉ")]
         [Required]
-        public string AddressDetail { get; set; }
+        public string NameAddress { get; set; }
 
         public Address Address { get; set; }
         public Category Category { get; set; }

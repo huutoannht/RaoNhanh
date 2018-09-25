@@ -75,7 +75,7 @@ namespace NetCore.Areas.Admin.Controllers
                 if (filePicture != null && filePicture.Length > 0)
                 {
                     var path = Path.Combine(_environment.WebRootPath, Constants.LocaltionImage);
-                    var image = FileExtensions.UploadImage(filePicture, path);
+                    var image = FileExtensions.Upload(filePicture, path);
                     product.Picture = image;
                    // product.PictureSmall = image?.ImageUrlSmall;
                 }
@@ -125,7 +125,7 @@ namespace NetCore.Areas.Admin.Controllers
                 if (filePicture != null && filePicture.Length > 0)
                 {
                     var path = Path.Combine(_environment.WebRootPath, "Cars_Upload");
-                    var image = FileExtensions.UploadImage(filePicture, path);
+                    var image = FileExtensions.Upload(filePicture, path);
                     product.Picture = image;
                     //product.PictureSmall = image?.ImageUrlSmall;
                 }

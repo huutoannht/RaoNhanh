@@ -73,7 +73,7 @@ namespace AspNetCore
                 <li>");
             EndContext();
             BeginContext(465, 56, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "588b064d5f694486953d1717075595e7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ff8c669e8a542178bd4990b63c6de3d", async() => {
                 BeginContext(508, 9, true);
                 WriteLiteral("Dashboard");
                 EndContext();
@@ -116,7 +116,7 @@ namespace AspNetCore
                                 ");
             EndContext();
             BeginContext(1358, 191, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1be0cce829db472bbe1dcd18f638497e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5aed5ae826e64264a7dbc53d8c627995", async() => {
                 BeginContext(1426, 119, true);
                 WriteLiteral("\r\n                                    <i class=\"fa fa-list-ul mr-20\"></i>   Danh sách\r\n                                ");
                 EndContext();
@@ -138,7 +138,7 @@ namespace AspNetCore
             WriteLiteral("\r\n                                ");
             EndContext();
             BeginContext(1583, 190, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2548f05dd5f450db3cda57d5919d678", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ea31c2874be4f099ec3157d38ea4f81", async() => {
                 BeginContext(1657, 112, true);
                 WriteLiteral("\r\n                                    <i class=\"fa fa-plus  mr-20\"></i>Tạo mới\r\n                                ");
                 EndContext();
@@ -181,7 +181,7 @@ namespace AspNetCore
                                 ");
             EndContext();
             BeginContext(2638, 192, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "12c08f132bc94d93b694658843ac2d6c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a96283e15e9e4cd4b1ab882ad0c1af30", async() => {
                 BeginContext(2707, 119, true);
                 WriteLiteral("\r\n                                    <i class=\"fa fa-list-ul mr-20\"></i>   Danh sách\r\n                                ");
                 EndContext();
@@ -203,7 +203,7 @@ namespace AspNetCore
             WriteLiteral("\r\n                                ");
             EndContext();
             BeginContext(2864, 192, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ace55f63381c4ff5a07b5a15656cb7bd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "13cd4d694b22460186f6ee7893ac5896", async() => {
                 BeginContext(2940, 112, true);
                 WriteLiteral("\r\n                                    <i class=\"fa fa-plus  mr-20\"></i>Tạo mới\r\n                                ");
                 EndContext();
@@ -246,7 +246,7 @@ namespace AspNetCore
                                 ");
             EndContext();
             BeginContext(3921, 190, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8fafeb68d1824833875085cf7c91d2b9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e2158df3ab44ecb8862e23464178da5", async() => {
                 BeginContext(3988, 119, true);
                 WriteLiteral("\r\n                                    <i class=\"fa fa-list-ul mr-20\"></i>   Danh sách\r\n                                ");
                 EndContext();
@@ -268,7 +268,7 @@ namespace AspNetCore
             WriteLiteral("\r\n                                ");
             EndContext();
             BeginContext(4145, 192, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fcf2d5b6d1d34f828a402cfcb7f1e160", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b198e42a3b0c4f1b834c2bb878d31a2a", async() => {
                 BeginContext(4221, 112, true);
                 WriteLiteral("\r\n                                    <i class=\"fa fa-plus  mr-20\"></i>Tạo mới\r\n                                ");
                 EndContext();
@@ -314,7 +314,7 @@ namespace AspNetCore
                                 ");
             EndContext();
             BeginContext(5266, 195, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3a3445c006ff46b6b93d94628851ecb2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d68c220134e542378579783ded9c4af0", async() => {
                 BeginContext(5339, 118, true);
                 WriteLiteral("\r\n                                    <i class=\"fa fa-save-ul mr-20\"></i>   Cập nhật\r\n                                ");
                 EndContext();

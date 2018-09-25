@@ -74,7 +74,7 @@ namespace NetCore.Areas.Admin.Controllers
                 category.CreatedOnUtc = DateTime.Now;
                 category.UpdatedOnUtc = DateTime.Now;
                 var path = Path.Combine(_environment.WebRootPath, Constants.LocaltionImage);
-                var image = FileExtensions.UploadImage(filePicture, path);
+                var image = FileExtensions.Upload(filePicture, path);
                 category.Picture = image;
                 await _context.SaveChangesAsync();
                 TempData["Message"] = "create";
@@ -112,7 +112,7 @@ namespace NetCore.Areas.Admin.Controllers
                 if (filePicture!=null && filePicture.Length>0)
                 {
                     var path = Path.Combine(_environment.WebRootPath, Constants.LocaltionImage);
-                    var image = FileExtensions.UploadImage(filePicture, path);
+                    var image = FileExtensions.Upload(filePicture, path);
                     category.Picture = image;
                 }
                 await _context.SaveChangesAsync();

@@ -37,6 +37,7 @@ namespace NetCore.Models.EntitiesFramework
         public double? Area { get; set; }
         public int? PostingCategoryId { get; set; }
         public int? ItemCategoryId { get; set; }
+        public string Seller { get; set; }
 
         public Address Address { get; set; }
         public Category Category { get; set; }

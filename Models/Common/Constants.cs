@@ -12,6 +12,9 @@ namespace NetCore.Models.Common
         public static string LocaltionImageSmall = "content\\uploads\\images\\small\\";
         public static string LocaltionFileBlog = "content\\uploads\\blogs\\";
         public static string LocaltionFile = "content\\uploads\\files\\";
+
+        public static string COUNTRY_VN = "VN";
+
         public class TYPE_PICTURE
         {
             public static int Picture = 1;

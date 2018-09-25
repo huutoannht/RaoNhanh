@@ -79,7 +79,7 @@ using NetCore.Models.ManageViewModels;
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<!-- Mirrored from hencework.com/theme/jetson/full-width-light/signup.html by HTTrack Website Copier/3.x [XR&CO\'2014], Sat, 04 Nov 2017 05:06:17 GMT -->\r\n");
             EndContext();
             BeginContext(251, 1202, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b603d1b0f6f348b5b38378e10ef01cd8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f80b8deea9534d04b3fb0551d8846566", async() => {
                 BeginContext(257, 780, true);
                 WriteLiteral(@"
     <meta charset=""UTF-8"" />
@@ -142,7 +142,7 @@ WriteAttributeValue("", 1379, Url.Content("~/Content/dist/css/style.css"), 1379,
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(1455, 862, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "028ad940b8864a699a845509822ada70", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3c7f1e7a3164fabbe7cc2ebb6c288f2", async() => {
                 BeginContext(1461, 134, true);
                 WriteLiteral("\r\n    <!--Preloader-->\r\n    <div class=\"preloader-it\">\r\n        <div class=\"la-anim-1\"></div>\r\n    </div>\r\n    <!--/Preloader-->\r\n    ");
                 EndContext();

@@ -10,3 +10,11 @@ Add the following code to the Configure method in your Application's Startup cla
             template : "{area:exists}/{controller=Home}/{action=Index}/{id?}"
           );
         });
+
+//TODO
+Create product Dinhvuvieclam
+Unit test
+//DOING
+Create product BatDongSan
+//DONE
+

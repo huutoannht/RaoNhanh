@@ -1,5 +1,13 @@
 ﻿@model NetCore.Models.ViewModel.ProductDTO
+@{
+    var itemCategoryBDS = ((List<NetCore.Models.EntitiesFramework.ItemCategory>)ViewBag.ItemCategoryId).Where(m => m.Category.CategoryId == 2);
+    var itemCategoryDVVL = ((List<NetCore.Models.EntitiesFramework.ItemCategory>)ViewBag.ItemCategoryId).Where(m => m.Category.CategoryId == 3);
+    var itemCategoryDVQC = ((List<NetCore.Models.EntitiesFramework.ItemCategory>)ViewBag.ItemCategoryId).Where(m => m.Category.CategoryId == 7);
 
+    var postingCategoryBDS = ((List<NetCore.Models.EntitiesFramework.PostingCategory>)ViewBag.PostingCategoryId).Where(m => m.Category.CategoryId == 2);
+    var postingCategoryDVVL = ((List<NetCore.Models.EntitiesFramework.PostingCategory>)ViewBag.PostingCategoryId).Where(m => m.Category.CategoryId == 3);
+    var postingCategoryDVQC = ((List<NetCore.Models.EntitiesFramework.PostingCategory>)ViewBag.PostingCategoryId).Where(m => m.Category.CategoryId == 7);
+}
 <div class="col-sm-9">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
@@ -16,7 +24,7 @@
         <div class="tab-pane fade show active" id="batdongsan" role="tabpanel" aria-labelledby="home-tab">
             <form asp-action="Create">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <input asp-for="Name" class="form-control" type="hidden" value="2" />
+                <input asp-for="CategoryId" class="form-control" type="hidden" value="2" />
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -41,7 +49,15 @@
                         </div>
                         <div class="form-group">
                             <label asp-for="PostingCategoryId" class="control-label"></label>
-                            <select asp-for="PostingCategoryId" class="form-control" asp-items="ViewBag.PostingCategoryId"></select>
+                            <select asp-for="PostingCategoryId" class="form-control" asp-items="@(new SelectList(postingCategoryBDS, "Id" ,"NamePostingCategory"))"></select>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="File" class="control-label"></label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="validatedCustomFile">
+                                <label class="custom-file-label" for="validatedCustomFile">Upload file...</label>
+                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label asp-for="Name" class="control-label"></label>
@@ -67,9 +83,9 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label asp-for="AddressDetail" class="control-label"></label>
-                            <input asp-for="AddressDetail" class="form-control" />
-                            <span asp-validation-for="AddressDetail" class="text-danger"></span>
+                            <label asp-for="NameAddress" class="control-label"></label>
+                            <input asp-for="NameAddress" class="form-control" />
+                            <span asp-validation-for="NameAddress" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label asp-for="PhoneNumber" class="control-label"></label>
@@ -83,7 +99,7 @@
                         </div>
                         <div class="form-group">
                             <label asp-for="ItemCategoryId" class="control-label"></label>
-                            <select asp-for="ItemCategoryId" class="form-control" asp-items="@(new SelectList(ViewBag.ItemCategoryId, "Id" ,"Name"))"></select>
+                            <select asp-for="ItemCategoryId" class="form-control" asp-items="@(new SelectList(itemCategoryBDS, "Id" ,"NameItemCategory"))"></select>
                         </div>
 
                     </div>
@@ -153,7 +169,7 @@
                         </div>
                         <div class="form-group">
                             <label asp-for="PostingCategoryId" class="control-label"></label>
-                            <select asp-for="PostingCategoryId" class="form-control" asp-items="ViewBag.PostingCategoryId"></select>
+                            <select asp-for="PostingCategoryId" class="form-control" asp-items="@(new SelectList(postingCategoryDVQC, "Id" ,"NamePostingCategory"))"></select>
                         </div>
                     </div>
                     <div class="col-md-12">
